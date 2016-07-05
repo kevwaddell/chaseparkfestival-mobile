@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html <?php language_attributes(); ?> class="no-js">
+<head id="www-chaseparkfestival-co-uk" data-template-set="chase-park-festival-theme">
+	
+	<meta charset="<?php bloginfo('charset'); ?>">
+	<?php header('X-UA-Compatible: IE=edge,chrome=1'); ?>
+	
+	<meta name="viewport" content="user-scalable=1.0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=yes">
+	
+	<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/_/img/favicon.ico">
+	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+	
+	<?php wp_head(); ?>
+	
+</head>
+
+<body <?php body_class($body_classes); ?>>
+	
+	<?php get_template_part( 'parts/global/main', 'nav' ); ?>
+	
+	<div class="cpf-wrapper nav-closed">
+		
+		<?php if (is_front_page()) { ?>
+		<?php get_template_part( 'parts/homepage/hp', 'masthead' ); ?>
+		<?php } else { ?>
+		<?php get_template_part( 'parts/global/gbl', 'masthead' ); ?>
+		<?php } ?>
