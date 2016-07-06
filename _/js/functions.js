@@ -131,8 +131,9 @@ jQuery(document).ready(function( $ ) {
 
 	/* GALLERY IMAGES FUNCTIONS */
 	
+	
 	//Image Viewer Pop up function
-	$('body').on('touchstart', '.img-grid .grid-item a' ,function(){
+	$('.img-grid').on('touchstart', '.grid-item a' ,function(){
 		
 		var img_viewer = $('.img-viewer');
 		var current_img = $(this).attr('href');

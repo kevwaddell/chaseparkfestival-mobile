@@ -15,46 +15,42 @@
 		<div class="main-txt with-pad">
 			
 			<div class="container-fluid">
-				<div class="row">
-					<div class="col-xs-10 col-xs-offset-1">
 						
-						<div class="feat-img" style="background-image: url(<?php bg_img($post); ?>)"></div>
+				<div class="feat-img" style="background-image: url(<?php bg_img($post); ?>)"></div>
 
-						<header class="main-text-header text-center">
-																		
-							<?php if ($artist_links_active && in_array('social', $artist_links_active)) { 
-							$artist_social_links = get_field('artist_social_links');
-							?>
-							<div class="social-links clearfix">
-								<?php foreach ($artist_social_links as $sl) { 
-								$bg_col = 'bg-col-'.strtolower($sl['title']);
-								$icon = "fa-".strtolower($sl['title']);		
-								//echo $icon;
-								?>
-								<a href="<?php echo $sl['social_link_url']; ?>" class="<?php echo $bg_col; ?>"><i class="fa <?php echo $icon; ?>"></i><span class="sr-only"><?php echo $sl['title']; ?></span></a>
-								<?php } ?>
-							</div>
-							<?php } ?>
-									
-							<?php if (empty($artist_logo)) { ?>
-							<h1 class="text-uppercase tk-azo-sans-uber txt-col-blue-dk"><?php the_title(); ?></h1>	
-							<?php } else { ?>
-							<img src="<?php echo $artist_logo['sizes']['large']; ?>" alt="<?php the_title_attribute(); ?>" class="img-title mag-bot-10 block" />
-							<?php } ?>
-							<?php if ($artist_links_active && in_array('website', $artist_links_active)) { 
-							$website = get_field('artist_website');	
-							?>
-							<a href="<?php echo $website; ?>" target="_blank" class="artist-website text-uppercase" rel="nofollow">View website</a>
-							<?php } ?>
-								
-						</header>
+				<header class="main-text-header text-center">
+																
+					<?php if ($artist_links_active && in_array('social', $artist_links_active)) { 
+					$artist_social_links = get_field('artist_social_links');
+					?>
+					<div class="social-links clearfix">
+						<?php foreach ($artist_social_links as $sl) { 
+						$bg_col = 'bg-col-'.strtolower($sl['title']);
+						$icon = "fa-".strtolower($sl['title']);		
+						//echo $icon;
+						?>
+						<a href="<?php echo $sl['social_link_url']; ?>" class="<?php echo $bg_col; ?>"><i class="fa <?php echo $icon; ?>"></i><span class="sr-only"><?php echo $sl['title']; ?></span></a>
+						<?php } ?>
+					</div>
+					<?php } ?>
 							
-						<div class="main-text-body">
-							<?php the_content();  ?>
-						</div><!-- .main-text-body -->
-				
-					</div><!-- .col-xs-10-->
-				</div><!-- .row -->
+					<?php if (empty($artist_logo)) { ?>
+					<h1 class="text-uppercase tk-azo-sans-uber txt-col-blue-dk"><?php the_title(); ?></h1>	
+					<?php } else { ?>
+					<img src="<?php echo $artist_logo['sizes']['large']; ?>" alt="<?php the_title_attribute(); ?>" class="img-title mag-bot-10 block" />
+					<?php } ?>
+					<?php if ($artist_links_active && in_array('website', $artist_links_active)) { 
+					$website = get_field('artist_website');	
+					?>
+					<a href="<?php echo $website; ?>" target="_blank" class="artist-website text-uppercase" rel="nofollow">View website</a>
+					<?php } ?>
+						
+				</header>
+					
+				<div class="main-text-body">
+					<?php the_content();  ?>
+				</div><!-- .main-text-body -->
+
 			</div><!-- .container-fluid -->
 			
 		</div><!-- .main-txt -->

@@ -139,12 +139,12 @@ background-position: right center;
 }
 
 #gbl-masthead {
-.h(20);	
+.h(10);	
 .bg-img("gbl-mast-image-bg.jpg");
 .bg-repeat;
-background-position: center top;
+background-position: left center;
 .bg-size;
-.border-bot(@wht; 0.5);
+.border-bot(@wht; 0.2);
 	
 	.mast-bg-stripes {	
 	.abs;
@@ -167,8 +167,9 @@ background-position: center top;
 	}
 	
 	.logo-wrap {
-	width: 100%;
-	.h(14);	
+	width: 80%;
+	.mag-auto;
+	.h(9.8);	
 		a.logo {
 		.in-block;
 		width: 100%;
@@ -185,12 +186,12 @@ background-position: center top;
 	.bottom(0);
 	.left(2);
 	width: 100%;
-	.line-h(4);	
+	.line-h(1);	
 	//.left(0);
 	//.top(-4);
 	z-index: 2;
 	.txt-col-wht;
-	.font-size(1.4);
+	.font-size(1);
 	
 		a {
 		.block;
@@ -206,9 +207,11 @@ background-position: center top;
 		span[property="itemListElement"] {
 		.in-block;
 		.bg-col-wht;
-		.border-radius(8px, 0, 0, 8px);
+		.border-radius(4px, 0, 0, 4px);
 		.mag-right(0.5);	
 		.transform(skewX(-10deg));
+		.pad-top(0.5);
+		.pad-bot(0.5);
 		
 			span {
 			.pad-right(1);	
