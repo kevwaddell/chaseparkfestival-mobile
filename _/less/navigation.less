@@ -8,30 +8,27 @@ width: 100%;
 	}
 	
 	&.nav-open {
-	height: auto;	
+	height: 87vh;	
 	}
 	
-	.nav-wrapper {
-	.pad-top(3);
-	.pad-bot(5);	
+	.nav-wrapper {	
+	height: 100%;
 	.border-bot(@wht; 0.2);
-	.inner-shadow(0, 0, 20px, 0.5);
 	}
 	
 	ul.quick-menu {
-	.mag-bot(3);
-	text-align: center;
+	.clearfix;
+	.bg-col-wht;
+	.mag-bot-0;
 		li {
-		.in-block;	
-		.mag-right(1);
+		.fleft;
+		width: 25%;	
 		}	
 		
 		a {
 		.no-text-dec;
-		.txt-col-wht;	
+		.txt-col-orange;	
 		.block;
-		.rounded(100%);
-		.border(@wht; 0.2);
 		
 			span.fontawesome-text {
 			.sr-only-helper;	
@@ -39,64 +36,55 @@ width: 100%;
 			
 			i {
 			.block;
-			.w(5);
-			.line-h(5);
+			.line-h(4);
 			text-align: center;	
-			.font-size(2.5);
+			.font-size(2);
 			}
 			
 			&:hover, &:active, &:focus {
-			.bg-col-wht;
-			.txt-col-orange;
+			.bg-col-orange-dk;
+			.txt-col-wht;
 			}
 		}
 	}
 	
 	ul.menu {
 	.mag-bot(0);
-	.mag-left(-1.5);
-	.mag-right(-1.5);
+	
 		li {
-		width: 50%;
-		.fleft;	
-		.mag-bot(2);
-		.pad-left(1.5);
-		.pad-right(1.5);
+		.border-bot(@wht; 0.2);	
 		}
 		a {
 		.no-text-dec;
 		.block;
-		.line-h(5);
+		.line-h(4);
 		.bg-col-trans;
 		.txt-col-wht;
-		.font-size(2);	
-		.border(@wht; 0.5);
+		.font-size(1.6);	
 		text-align: center;
 		.transition(0.2s, ease-in-out);
+		.rel;
 			i {
-			.fleft;
-			.line-h(5);	
-			.w(5);
+			.abs;
+			.left(0);
+			.top(0);
+			.line-h(4);	
+			.w(4);
 			.txt-col-orange-dk;
 			}
 			
 			&:hover, &:active, &:focus {
 			.bg-col-wht;
 			.txt-col-orange;
-			.drop-shadow(0, 0, 10px, 0.4);
 			}
 			
 		}	
 	}
 	
-	.container-fluid {
-	.rel;	
-	}
-	
 	#close-nav-btn {
 	.abs;
-	.right(1.5);
-	.bottom(-5);
+	.right(0);
+	.bottom(0);
 	.no-rounded;	
 	.w(4);
 	.h(4);
@@ -105,6 +93,37 @@ width: 100%;
 		&:hover, &:active, &:focus {
 		.bg-col-orange-dk;
 		.txt-col-wht;
+		}
+	}
+	
+	@media screen and (orientation: landscape) {
+		&.nav-open {
+		height: auto;	
+		}
+		
+		.nav-wrapper {	
+		.no-border;
+		}
+		
+		#close-nav-btn {
+		.top(0);
+		bottom: auto;	
+		}
+		
+		ul.quick-menu {
+		.mag-right(4.2);	
+		}
+		
+		ul.menu {
+		.clearfix;	
+		.rel;
+			li {
+			.fleft;
+			width: 50%;	
+				&:nth-child(even) {
+				.border-left(@wht; 0.2);	
+				}
+			}
 		}
 	}
 }

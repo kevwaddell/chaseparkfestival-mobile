@@ -3,8 +3,8 @@
 //.gradient(@blue, @wht, @blue);
 	#main-nav-btn {
 	.abs;
-	.top(1.5);
-	.right(1.5);
+	.top(0);
+	.right(0);
 	//.mag-top(3);	
 	.no-rounded;
 	.no-border;
@@ -35,14 +35,20 @@
 	}	
 	
 	.festival-tag {
-	.font-size(2.6);	
+	.font-size(1.8);	
 	letter-spacing: 3px;
+	}
+	
+	@media screen and (orientation: landscape) {
+		.festival-tag {
+		.font-size(1.4);	
+		}	
 	}
 }
 
 #hp-masthead {
 //.h(75);
-height: 97vh;
+height: 87vh;
 .bg-img("hp-mast-image-bg.jpg");
 .bg-repeat;
 background-position: right center;
@@ -58,12 +64,12 @@ background-position: right center;
 	//.bg-img("hp-mast-notes-bg.png");
 	.bg-img("hp-mast-stripes-bg.png");
 	.bg-repeat;
-	background-position: -2px -2px;
+	background-position: center center;
 	.bg-size();
 	}
 	
-	.container-fluid {
-	.pad-top(10);
+	.masthead-wrap {
+	.pad-top(7);
 	height: 100%;	
 	.rel;
 	z-index: 2;
@@ -71,7 +77,7 @@ background-position: right center;
 	
 	.logo-wrap {
 	width: 100%;
-	.h(30);	
+	.h(15);	
 	.mag-top(0);
 	margin-left: auto;
 	margin-right: auto;
@@ -87,25 +93,15 @@ background-position: right center;
 	.bg-img("logo-lrg.png");
 	.bg-repeat;
 	background-position: center center;
-	.bg-size(80%);
+	.bg-size(contain);
 	}
 	
 	.date-location {
-	//.mag-top(10);
 		
 		.dl-item {
 		.in-block;	
 		.txt-col-wht;
-		.font-size(2.6);
-		//.mag-left(-2);
-			span {
-			.in-block;
-			.pad-left(2);
-			.line-h(6);
-			//.rounded(8px);
-			//.transform(skewX(-10deg));	
-			.rel;
-			}
+		.font-size(1.6);
 		}
 		
 	}
@@ -113,29 +109,30 @@ background-position: right center;
 	a.book-tickets-btn-lg {
 	width: auto;
 	.abs;
-	.left(1.5);
-	.right(1.5);
-	.bottom(5);
-	.drop-shadow(0, 3px, 10px, 0.7);
+	.left(0);
+	.right(0);
+	.bottom(0);
 	.no-rounded;
 	}
 	
-	@media screen and (orientation: portrait) {
-	height: 70vh;
-		.festival-tag {
-		.font-size(2);	
-		letter-spacing: wpx;
+	@media screen and (orientation: landscape) {
+	height: 72vh;
+		.masthead-wrap {
+		.pad-top(2.5);
 		}
 		
-		a.book-tickets-btn-lg {
-		.h(9);
-		.line-h(8);
-		.font-size(4);
-			&:before, &:after {
-			.w(8);
-			.line-h(8);	
-			.font-size(4);
+		.logo-wrap {
+		.h(10);
+		}
+		
+		.date-location {
+		.pad-right(5);
+			.dl-item {
+			.in-block;	
+			.txt-col-wht;
+			.font-size(1.4);
 			}
+		
 		}
 	}
 
