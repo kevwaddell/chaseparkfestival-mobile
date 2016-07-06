@@ -7,7 +7,7 @@
 		<div class="container-fluid">
 			<div class="row mag-bot-30">
 				<div class="col-sm-10 col-sm-offset-1 col-md-7 col-md-offset-0">
-					<div class="main-txt">
+					<div class="main-txt mag-bot-30">
 						<?php the_content(); ?>
 					</div>
 				</div>

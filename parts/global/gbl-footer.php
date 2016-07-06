@@ -21,22 +21,7 @@ $social_links = get_field('gbl_social_links', 'options');
 <footer id="footer-site-info" role="contentinfo" class="bg-col-blue">
 	<div class="footer-top">
 		
-		<div class="footer-bg-imgs">
-			<div class="footer-grass-bg"></div>
-		</div>
-		
 		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<?php wp_nav_menu(array( 
-						'container' => 'false', 
-						'menu' => 'Footer Main Navigation', 
-						'menu_class'  => 'footer-menu clearfix list-unstyled text-uppercase',
-						'fallback_cb' => false ) 
-						); 
-					?>
-				</div>
-			</div>
 			
 			<div class="ticket-details">
 				<div class="ticket-info text-center">
@@ -48,12 +33,6 @@ $social_links = get_field('gbl_social_links', 'options');
 
 			<div class="contact-info text-center txt-col-blue-dk"><strong>For more Information contact <?php echo $contact_name; ?> on <a href="tel:<?php echo $contact_tel_link; ?>"><?php echo $contact_tel; ?></a> or <a href="mailto:<?php echo $contact_email; ?>"><?php echo $contact_email; ?></a></strong></div>
 			</div>
-		
-		<div class="date-location clearfix tk-azo-sans-uber txt-col-wht">
-			<time class="footer-date dl-item bg-col-blue pull-left"><?php echo $fest_date; ?></time>
-			<div class="footer-location dl-item bg-col-orange in-block pull-left"><?php echo $fest_location; ?></div>
-			<time class="footer-time dl-item bg-col-blue-dk in-block pull-right"><?php echo $fest_time; ?></time>
-		</div>
 		
 		<?php if (!empty($social_links)) { ?>
 		<div class="social-links">

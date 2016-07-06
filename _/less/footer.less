@@ -4,7 +4,7 @@ footer#footer-site-info {
 	.footer-top {
 	//.min-h(50);
 	.rel;
-	.pad-top(3);
+	.pad-top(2);
 	//.pad-bot(3);
 	.gradient(@blue, @wht, @blue);	
 	.border-bot(@wht; 0.2);
@@ -12,40 +12,8 @@ footer#footer-site-info {
 	
 	.footer-base {
 	//.min-h(5);	
-	.line-h(4);
-	}
-	
-	.footer-bg-imgs, .footer-guitar-bg, .footer-grass-bg {
-	.abs;	
-	}
-	
-	.footer-bg-imgs {	
-	.top(0);
-	.left(0);
-	width: 100%;
-	height: 100%;
-	}
-	
-	.footer-guitar-bg {	
-	.top(0);
-	.right(0);	
-	height: 100%;
-	width: 50%;
-	.bg-img("hp-mast-guitar-bg.png");
-	.bg-repeat;
-	background-position: right center;
-	.bg-size(contain);
-	}
-	
-	.footer-grass-bg {	
-	.bottom(9);
-	.left(0);	
-	.h(15);
-	width: 100%;
-	.bg-img("hp-mast-grass-bg.png");
-	background-repeat: repeat-x;
-	background-position: center bottom;
-	.bg-size(contain);
+	.line-h(2.5);
+	.font-size(1);
 	}
 	
 	.container-fluid {
@@ -53,15 +21,14 @@ footer#footer-site-info {
 	//z-index: 2;	
 	}
 	
+/*
 	ul.footer-menu {
 	.mag-bot(2);	
 		li {
-		width: 50%;
-		.fleft;
-		.mag-bot(1.5);
+		.mag-bot(0.5);
 		.bold;
-		.font-size(2);
-		.line-h(2);
+		.font-size(1.4);
+		.line-h(1.4);
 			i {
 			.in-block;
 			.w(3);
@@ -80,17 +47,18 @@ footer#footer-site-info {
 		}
 		
 	}
+*/
 	
 	.ticket-details {
 	.pad-bot(2);
 		.btn {	
 		.pad-all(0);
-		.line-h(6);
-		.border(@wht; 0.5);
-		.rounded(12px);
+		.line-h(4);
+		.border(@wht; 0.2);
+		.rounded(8px);
 		.bg-col-orange;
 		.txt-col-wht;
-		.font-size(2.5);
+		.font-size(1.5);
 			&:hover, &:active, &:focus {
 			.bg-col-wht;
 			.txt-col-orange;
@@ -98,11 +66,11 @@ footer#footer-site-info {
 			
 			&:before, &:after {
 			font-family: FontAwesome;	
-			.w(6);
-			.line-h(6);	
+			.w(4);
+			.line-h(4);	
 			text-align: center;
 			.txt-col-blue-dk;
-			.font-size(3);
+			.font-size(2);
 			}
 			
 			&:before {
@@ -113,7 +81,7 @@ footer#footer-site-info {
 			&:after {
 			content: "\f054";	
 			.fright;
-			.font-size(2);	
+			.font-size(1.5);	
 			}
 		}
 	}
@@ -121,9 +89,9 @@ footer#footer-site-info {
 	.ticket-info {
 	.bold;
 	.txt-col-wht;
-	.pad-bot(2);
-	.font-size(1.6);
-	.line-h(2);
+	.pad-bot(1);
+	.font-size(1.4);
+	.line-h(1.6);
 		a {
 		.txt-col-wht;	
 		.no-text-dec;
@@ -134,9 +102,9 @@ footer#footer-site-info {
 	}
 	
 	.contact-info {
-	.font-size(1.6);	
-	.line-h(2);
-	.pad-all(1);
+	.font-size(1.4);	
+	.line-h(1.8);
+	.pad-all(0.5);
 	//.bg-col-wht;
 	.trans-bg(@wht; 0.8);
 	.mag-bot(2);
@@ -151,6 +119,7 @@ footer#footer-site-info {
 		}
 	}
 	
+/*
 	.date-location {
 	.rel;
 	z-index: 10;
@@ -162,31 +131,22 @@ footer#footer-site-info {
 		.pad-left(1);
 		.pad-right(1);
 		text-align: center;
-		.border-right(@wht; 0.2);
-		}
-		
-		.footer-date {
-		width: 50%;	
-		}
-		.footer-location {
-		width: 35%;		
-		}
-		.footer-time {
-		width: 15%;	
-		.no-border;	
+		width: 100%;
+		.border-bot(@wht; 0.2);
 		}
 	}
+*/
 	
 	.social-links {
-	text-align: center;
 	.border-top(@wht; 0.2);
+	text-align: center;
 	.rel;
 	z-index: 10;
 	.clearfix;
 		a {
 		.fleft;	
 		width: 50%;
-		.h(5);
+		.h(4);
 		.txt-col-wht;
 		.no-text-dec;
 		.bg-col-wht;
@@ -195,8 +155,8 @@ footer#footer-site-info {
 			width: 100%;
 			height: 100%;
 			text-align: center;
-			.font-size(3);
-			.line-h(5);
+			.font-size(2.5);
+			.line-h(4);
 				&.fa-facebook {
 				.bg-col-facebook;	
 				.border-right(@wht; 0.2);
@@ -234,8 +194,8 @@ footer#footer-site-info {
 		li {
 		.in-block;	
 			a {
-			.pad-left(1.5);	
-			.pad-right(1.5);
+			.pad-left(0.5);	
+			.pad-right(0.5);
 			.border-right(@wht; 0.1);
 			}
 			
