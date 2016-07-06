@@ -23,25 +23,19 @@ $media_coverage = get_field('media_coverage', 'options');
 $press_quotes = get_field('press_quotes', 'options');
 ?>
 		<article <?php post_class('pg-content'); ?>>
-	
-				<div class="row">
-					<div class="col-xs-10 col-xs-offset-1">
 						
-						<div class="main-txt with-pad">
-							<?php the_content(); ?>
-							
-							<?php get_template_part( 'parts/sections/section', 'socialStats' ); ?>
-							
-						</div>
-	
-					</div>
+			<div class="main-txt with-pad">
+				<?php the_content(); ?>
+				
+				<?php get_template_part( 'parts/sections/section', 'socialStats' ); ?>
+				
+			</div>
 					
-					<aside class="col-xs-10 col-xs-offset-1 sidebar mag-bot-50">
-												
-						<?php get_template_part( 'parts/panels/media', 'coverage' ); ?>
-						
-					</aside>
-				</div>
+			<aside class="sidebar mag-bot-30">
+										
+				<?php get_template_part( 'parts/panels/media', 'coverage' ); ?>
+				
+			</aside>
 	
 		</article>
 	</div>
@@ -60,8 +54,8 @@ $press_quotes = get_field('press_quotes', 'options');
 				<div class="item<?php echo ($k == 0) ? " active":""; ?>">
 					<div class="quote-wrap">
 						<div class="media-title text-center bold text-uppercase txt-col-blue-dk"><?php echo $q['media_title']; ?></div>
-						<blockquote class="media-quote text-center bold txt-col-orange"><?php echo $q['quote']; ?></blockquote>
-						<a href="<?php echo $q['article_link']; ?>" target="_blank" class="media-link block text-center bold" rel="nofollow">View the full article on the <?php echo $q['media_title']; ?> website <i class="fa fa-chevron-right fa-lg pull-right"></i></a>
+						<blockquote class="media-quote text-center bold txt-col-wht"><?php echo $q['quote']; ?></blockquote>
+						<a href="<?php echo $q['article_link']; ?>" target="_blank" class="media-link block text-center bold" rel="nofollow">View the full article <i class="fa fa-chevron-right fa-lg pull-right"></i></a>
 					</div>
 				</div>
 				<?php } ?>

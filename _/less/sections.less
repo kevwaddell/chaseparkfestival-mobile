@@ -76,27 +76,27 @@ a {
 }
 
 .pg-section-full {
-.min-h(40);	
+.min-h(20);	
 	
 	.section-header {
 	width: 80%;
 	.mag-auto;	
-	.font-size(2);
-	.line-h(1.6);
-	.pad-bot-20;
-	.border-radius(0, 10px, 10px, 0);
+	.font-size(1.4);
+	.line-h(1.4);
+	.pad-bot-10;
+	.border-radius(0, 8px, 8px, 0);
 	}
 	
 	&.blue-border-top {
-	.border-top(@blue; 1);	
+	.border-top(@blue; 0.2);	
 	}
 	
 	&.blue-dk-border-top {
-	.border-top(@blue-dk; 1);	
+	.border-top(@blue-dk; 0.2);	
 	}
 	
 	&.orange-border-top {
-	.border-top(@orange; 1);	
+	.border-top(@orange; 0.2);	
 	}
 	
 	&#map-wrapper {
@@ -296,10 +296,11 @@ a {
 	}
 	
 	&#press-quotes {
-	
+	.h(20.2);	
 	.bg-img('gbl-mast-cloud-left.png');	
 	.bg-repeat;	
 	background-position: left top;
+	.bg-size(40%);
 		
 		.section-header {
 		.abs;	
@@ -309,48 +310,49 @@ a {
 		}
 		
 		.carousel, .carousel-inner, .item {
-		.min-h(40);	
+		.h(20);	
 		}
 		
 		.carousel {
 		.bg-img('gbl-mast-cloud-right.png');	
 		.bg-repeat;	
 		background-position: right bottom;	
+		.bg-size(40%);
 		}	
 		
 		.item {
 
 			.quote-wrap {
-			.min-h(40);
-			.bg-img('quote-wrap.png');
-			.bg-repeat;
-			.bg-size;
-			background-position: center center;	
-			.pad(12;20;0;25);
+			.h(20);
+			.pad-top-50;
+			.rel;
 				
 				.media-title {
-				.font-size(2.5);	
+				.font-size(1.4);
+				.line-h(1.4);	
 				}
 				
 				blockquote.media-quote {
-				.no-border;	
-				.pad-left(0);
-				.font-size(2);
+				.no-border;
+				.font-size(1.2);
+				.line-h(1.4);
 				}
 				
 				a.media-link {
+				.abs;
 				.bg-col-orange;
 				.txt-col-wht;
 				.no-text-dec;	
-				.font-size(2);
-				.line-h(4);
-				.mag-left(-10);
-				.mag-right(-12);
+				.font-size(1.2);
+				.line-h(3);
+				.left(0);
+				.bottom(1);
+				width: 100%;
 				
 					i {
-					.line-h(4);	
+					.line-h(3);	
 					.pad-right(1);
-					.font-size(2);
+					.font-size(1.2);
 					}
 					
 					&:hover, &:active, &:focus {
@@ -359,7 +361,7 @@ a {
 				}
 			}
 			
-			@media screen and (orientation: portrait) {
+			@media screen and (orientation: landscape) {
 				.quote-wrap {
 				.pad(13;10;0;13);
 					
@@ -458,10 +460,6 @@ text-align: center;
 	background-position: center top;
 	.bg-size(contain);
 	}
-	
-	.col-list-2 {
-	.columns(50%, 2, 30px, #EEE, solid, 0px);	
-	}
 
 	h3.panel-header {
 	.font-size(2);
@@ -471,9 +469,9 @@ text-align: center;
 	}
 	
 	span.panel-label {
-	.font-size(2);
-	.line-h(2);
-	.pad-all(0.5);
+	.font-size(1.6);
+	.line-h(1.6);
+	.pad-all(0.3);
 	.rounded(4px);	
 	.mag-bot-10;
 	}
@@ -483,7 +481,7 @@ text-align: center;
 	.line-h(2.5);	
 		li:before {
 		font-family: FontAwesome;	
-		content: "\f058";
+		content: "\f138";
 		.txt-col-orange;	
 		}
 		li {
@@ -508,8 +506,9 @@ text-align: center;
 	
 	a.enquiry-btn {
 	.bg-col-orange;
-	.border(@wht; 0.4);
+	.border(@wht; 0.2);
 	.txt-col-wht;	
+	.font-size(1.2);
 		&:hover, &:active, &:focus {
 		.bg-col-wht;
 		.txt-col-orange;
@@ -517,7 +516,7 @@ text-align: center;
 		
 		i {
 		.fright;
-		.line-h(2.8);	
+		.line-h(1.8);	
 		}
 	}
 	
@@ -617,19 +616,23 @@ text-align: center;
 	}
 	
 	.contact-info-sml {
-	.font-size(2.5);	
-	.line-h(3);
+	.font-size(1.4);	
+	.line-h(1.6);
 		
 		&.panel-name {
-		.font-size(2.5);
-		.line-h(2.5);
+		.font-size(1.8);
+		.line-h(1.8);
 		.mag-bot(0.5);	
+		}
+		
+		&.panel-tel {
+		.font-size(1.8);
+		.line-h(2);
 		}
 		
 		a {
 		.txt-col-wht;
-		.no-text-dec;
-		.font-size(2);	
+		.no-text-dec;	
 			&:hover, &:active, &:focus {
 			.txt-col-orange;
 			}	
@@ -645,39 +648,40 @@ text-align: center;
 }
 
 .social-media-stats {
-border: @orange 5px dashed;	
-.pad-all(2);
-.rounded(10px);
+border: @orange 2px dashed;	
+.pad-all(1);
+.rounded(8px);
 .mag-top(3);
 
 	h3 {
-	.font-size(3);	
-	.line-h(2.8);
+	.font-size(2);	
+	.line-h(1.8);
 	}
 	
 	p {
-	.mag-bot-30 !important;	
+	.font-size(1.2) !important;
+	.mag-bot-20 !important;	
 	}
 
 	.social-stat-wrap {
 	.rounded(8px);	
-	.pad(0;2;2;2);
+	.pad(0;0.5;0.5;0.5);
 		i {
 		.in-block;
-		.w(6);
-		.h(6);
-		.line-h(6);
+		.w(4);
+		.h(4);
+		.line-h(4);
 		.rounded(100%);	
 		.mag-top(-2);
 		}
 		
 		.label {
-		.font-size(2);	
+		.font-size(1.6);	
 		}
 		
 		.stat-number {
-		.font-size(5);	
-		.line-h(4.5);
+		.font-size(3);	
+		.line-h(2.5);
 		}
 	}
 }

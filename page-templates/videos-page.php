@@ -24,16 +24,14 @@ global $wp_embed;
 	<article <?php post_class('pg-content'); ?>>
 
 		<section id="videos-section" class="video-grid pad-top-30">
-			<div class="row">
-				<div class="col-xs-10 col-xs-offset-1">
-					<?php foreach ($videos as $video) { ?>
-					<div class="video-wrap">
-						<h3 class="txt-col-blue text-center"><?php echo $video['video_title']; ?></h3>
-						<iframe width="600" height="338" class="mag-bot-20" src="<?php echo $video['video_url']; ?>" frameborder="0" allowfullscreen></iframe>
-					</div>
-					<?php } ?>
-				</div>
+
+			<?php foreach ($videos as $video) { ?>
+			<div class="video-wrap">
+				<h3 class="txt-col-blue text-center"><?php echo $video['video_title']; ?></h3>
+				<iframe width="280" height="158" class="mag-bot-20" src="<?php echo $video['video_url']; ?>" frameborder="0" allowfullscreen></iframe>
 			</div>
+			<?php } ?>
+
 		</section>
 
 	</article>
