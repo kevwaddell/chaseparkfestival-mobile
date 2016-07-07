@@ -28,14 +28,12 @@ $access_info_active = get_field('access_info_active', 'options');
 			</div>
 		</div>
 		
-		<div class="info-panels mag-bot-40">
+		<div class="info-panels mag-bot-20">
 			<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-10 col-xs-offset-1">
-					<?php get_template_part( 'parts/panels/around', 'site' ); ?>	
-					<?php get_template_part( 'parts/panels/access', 'enquiries' ); ?>
-				</div>
-			</div>
+
+				<?php get_template_part( 'parts/panels/around', 'site' ); ?>	
+				<?php get_template_part( 'parts/panels/access', 'enquiries' ); ?>
+
 			</div>
 		</div>
 		

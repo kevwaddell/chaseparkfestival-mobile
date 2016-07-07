@@ -24,28 +24,18 @@ $gbl_contact_telephone = get_field('gbl_contact_telephone', 'options');
 		
 		<?php if ($sponsor_active) { ?>
 		<article <?php post_class('pg-content'); ?>>
-			<div class="row">
-				<div class="col-xs-10 col-xs-offset-1">
 				
-					<div class="main-txt with-pad">
-							<?php the_content(); ?>
-					</div>
-					
-					<aside class="sidebar pad-bot-40">
-					
-						<div class="row">
-							<div class="col-xs-8">
-								<?php get_template_part( 'parts/panels/sponsor', 'enquiries' ); ?>
-							</div>
-							<div class="col-xs-4">
-								<?php get_template_part( 'parts/panels/download', 'package' ); ?>
-							</div>
-						</div>
-					
-					</aside>
-				
-				</div>
+			<div class="main-txt with-pad">
+					<?php the_content(); ?>
 			</div>
+			
+			<aside class="sidebar pad-bot-30 clearfix">
+
+				<?php get_template_part( 'parts/panels/sponsor', 'enquiries' ); ?>
+
+				<?php get_template_part( 'parts/panels/download', 'package' ); ?>
+			
+			</aside>
 			
 		</article>
 		

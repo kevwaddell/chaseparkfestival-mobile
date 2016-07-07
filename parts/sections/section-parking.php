@@ -120,24 +120,20 @@ $location = get_field('cpf_map_details', 'options');
 	<div class="pg-section-full">
 		<h2 class="section-header text-center bg-col-orange txt-col-wht tk-azo-sans-uber">Getting here…</h2>
 		<div class="container-fluid">
-			<div class="row">
-				
-				<div class="col-xs-10 col-xs-offset-1">
-				<?php if (!empty($travel_info_left_text)) { ?>
-				<dl class="info-list">
-					<?php foreach ($travel_info_left_text as $item) { ?>
-					<dt class="text-uppercase txt-col-orange"><i class="fa <?php echo $item['Icon']; ?> text-center bg-col-blue txt-col-wht"></i><?php echo $item['title']; ?></dt>
-					<dd><?php echo $item['text']; ?></dd>
-					<?php } ?>
-					<?php foreach ($travel_info_right_text as $item) { ?>
-					<dt class="text-uppercase txt-col-orange"><i class="fa <?php echo $item['Icon']; ?> text-center bg-col-blue txt-col-wht"></i><?php echo $item['title']; ?></dt>
-					<dd><?php echo $item['text']; ?></dd>
-					<?php } ?>
-				</dl>
+
+			<?php if (!empty($travel_info_left_text)) { ?>
+			<dl class="info-list">
+				<?php foreach ($travel_info_left_text as $item) { ?>
+				<dt class="text-uppercase txt-col-orange"><i class="fa <?php echo $item['Icon']; ?> text-center bg-col-blue txt-col-wht"></i><?php echo $item['title']; ?></dt>
+				<dd><?php echo $item['text']; ?></dd>
 				<?php } ?>
-				</div>	
-				
-			</div>	
+				<?php foreach ($travel_info_right_text as $item) { ?>
+				<dt class="text-uppercase txt-col-orange"><i class="fa <?php echo $item['Icon']; ?> text-center bg-col-blue txt-col-wht"></i><?php echo $item['title']; ?></dt>
+				<dd><?php echo $item['text']; ?></dd>
+				<?php } ?>
+			</dl>
+			<?php } ?>
+
 		</div>
 	</div>
 </section>

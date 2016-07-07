@@ -4,7 +4,7 @@ $gbl_ae_contact_email = get_field('gbl_ae_contact_email', 'options');
 $gbl_ae_contact_telephone = get_field('gbl_ae_contact_telephone', 'options');
 ?>
 
-<div class="info-panel panel-blue">
+<div class="info-panel panel-blue mag-bot-20">
 	<h3 class="panel-header tk-azo-sans-uber text-center txt-col-orange">Artists Enquiries</h3>
 	<div class="panel-inner">
 		<div class="contact-info panel-name text-center txt-col-wht tk-azo-sans-uber"><?php echo $gbl_ae_contact_name; ?></div>

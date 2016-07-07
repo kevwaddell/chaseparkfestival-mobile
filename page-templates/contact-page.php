@@ -23,46 +23,36 @@ $tickets_url = get_field('gbl_tickets_url', 'options');
 
 		<article <?php post_class(); ?>>
 			<div class="container-fluid">
-			<div class="row">
-			<div class="col-xs-10 col-xs-offset-1">	
+
 				<div class="main-txt pad-top-30">
 					<?php the_content(); ?>
 				</div>
 			
 				<section class="contact-section">
+
+					<?php get_template_part( 'parts/panels/general', 'enquiries' ); ?>
+	
+					<?php get_template_part( 'parts/panels/artists', 'enquiries' ); ?>
+
 					
-					<div class="row mag-bot-30">	
-						<div class="col-md-6">
-							<?php get_template_part( 'parts/panels/general', 'enquiries' ); ?>
-						</div>
-						<div class="col-md-6">
-							<?php get_template_part( 'parts/panels/artists', 'enquiries' ); ?>
-						</div>
-					</div>
-					
-					<div class="ticket-info text-center pad-bot-60">
+					<div class="ticket-info text-center pad-bot-30">
 						<span class="bold txt-col-blue-dk">Tickets are available for purchase from</span><br />
-						<a href="<?php echo $ticket_provider_http; ?>" class="mag-bot-10 block bold site-link"><?php echo $ticket_provider[1]; ?></a>
+						<a href="<?php echo $ticket_provider_http; ?>" target="_blank" class="mag-bot-20 block bold site-link"><?php echo $ticket_provider[1]; ?></a>
 						<a href="<?php echo $tickets_url; ?>" target="_blank" class="btn btn-default btn-block book-tickets-btn tk-azo-sans-uber">Book Your Tickets</a>
 					</div>
 					
 				</section>
-			</div>	
-			</div>
+	
 			</div>	
 			
 			<?php if ($form_active) { 
 			 $form = get_field('form');
 			 gravity_form_enqueue_scripts($form['id'], true);
 			?>
-			<section id="contact-form" class="bg-col-orange pad-bot-40">
+			<section id="contact-form" class="bg-col-orange pad-bot-20">
 				<div class="container-fluid">
-					<div class="row">
-						<div class="col-xs-10 col-xs-offset-1">
-							<h3 class="section-header tk-azo-sans-uber txt-col-blue text-center">Enquiry form</h3>
-							<?php gravity_form($form['id'], false, true, false, '', true, 1);  ?>	
-						</div>
-					</div>
+					<h3 class="section-header tk-azo-sans-uber txt-col-blue text-center">Enquiry form</h3>
+					<?php gravity_form($form['id'], false, true, false, '', true, 1);  ?>	
 				</div>
 			</section>		
 			<?php } ?>

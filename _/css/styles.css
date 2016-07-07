@@ -3320,7 +3320,6 @@ h5 {
   margin-top: 0px;
 }
 #main-content {
-  min-height: 500px;
   position: relative;
   background-color: #FFF;
 }
@@ -3329,11 +3328,9 @@ h5 {
 }
 #main-content.notes-bg-orange {
   background-color: #eda03f;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-#main-content.notes-bg-orange.border-bot {
-  border-bottom: 10px solid #FFF;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 2px solid #FFF;
 }
 #acfv-wrap.adminbar-visible {
   top: 0px;
@@ -3900,8 +3897,8 @@ a.book-tickets-btn-lg:focus:after {
   padding-bottom: 20px;
 }
 #main-content .main-txt h2 {
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 18px;
+  line-height: 18px;
 }
 #main-content .main-txt .main-text-header {
   margin-bottom: 20px;
@@ -4105,37 +4102,36 @@ a {
   border-top: 2px solid #eda03f;
 }
 .pg-section-full#map-wrapper {
-  min-height: 350px;
+  min-height: 70vh;
 }
 .pg-section-full #map {
-  height: 350px;
+  height: 70vh;
   background-color: #f6ce9c;
 }
 .pg-section-full dl.info-list {
-  font-size: 20px;
-  line-height: 30px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .pg-section-full dl.info-list dt {
   position: relative;
-  padding-left: 100px;
+  line-height: 16px;
+  margin-bottom: 5px;
 }
 .pg-section-full dl.info-list dt i {
-  position: absolute;
-  top: 7px;
-  left: 0px;
-  width: 70px;
-  height: 70px;
-  line-height: 70px;
-  font-size: 30px;
+  float: left;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
+  margin-right: 10px;
 }
 .pg-section-full dl.info-list dd {
-  padding-left: 100px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .pg-section-full dl.info-list dd:last-child {
   margin-bottom: 0px;
@@ -4146,36 +4142,36 @@ a {
   color: #009ee3;
 }
 .pg-section-full .extra-info-panel {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   border-top: 5px solid #FFF;
-  border-bottom: 10px solid #FFF;
+  border-bottom: 5px solid #FFF;
 }
 .pg-section-full .extra-info-panel i {
   margin: auto;
-  margin-top: -35px;
-  margin-bottom: 20px;
-  border: 5px solid #FFF;
+  margin-top: -25px;
+  margin-bottom: 10px;
+  border: 2px solid #FFF;
   display: block;
-  width: 70px;
-  height: 70px;
-  line-height: 60px;
+  width: 50px;
+  height: 50px;
+  line-height: 46px;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
-  font-size: 30px;
+  font-size: 25px;
 }
 .pg-section-full .extra-info-panel span {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 20px;
 }
 .pg-section-full#reason-2-sponsor ul {
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 14px;
+  line-height: 18px;
   overflow: visible;
 }
 .pg-section-full#reason-2-sponsor ul li {
   margin-bottom: 10px;
-  padding-left: 40px;
+  padding-left: 30px;
   position: relative;
 }
 .pg-section-full#reason-2-sponsor ul li:last-child {
@@ -4184,12 +4180,12 @@ a {
 .pg-section-full#reason-2-sponsor ul li:before {
   position: absolute;
   left: 0px;
-  top: 2px;
-  font-size: 30px;
+  top: 1px;
+  font-size: 20px;
 }
 .pg-section-full#sponsor-packages .package-wrap .icon-rosette {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   float: left;
   background-image: url(img/sponsor-rosette.png);
   background-repeat: no-repeat;
@@ -4200,20 +4196,19 @@ a {
   background-size: contain;
 }
 .pg-section-full#sponsor-packages .package-wrap h3 {
-  font-size: 40px;
-}
-.pg-section-full#sponsor-packages .package-wrap p.price {
-  margin-bottom: 10px;
   font-size: 30px;
 }
-.pg-section-full#sponsor-packages .package-wrap ul {
+.pg-section-full#sponsor-packages .package-wrap p.price {
   font-size: 20px;
-  line-height: 25px;
-  padding-top: 20px;
+}
+.pg-section-full#sponsor-packages .package-wrap ul {
+  font-size: 16px;
+  line-height: 18px;
+  padding-top: 10px;
 }
 .pg-section-full#sponsor-packages .package-wrap ul li {
   margin-bottom: 10px;
-  padding-left: 40px;
+  padding-left: 30px;
   position: relative;
 }
 .pg-section-full#sponsor-packages .package-wrap ul li:last-child {
@@ -4223,21 +4218,21 @@ a {
   position: absolute;
   left: 0px;
   top: 0px;
-  font-size: 30px;
+  font-size: 20px;
 }
 .pg-section-full#sponsor-packages .benefits-list {
-  padding: 20px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  padding: 15px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
 }
 .pg-section-full#sponsor-packages .benefits-list span {
-  font-size: 18px;
-  line-height: 22px;
-}
-.pg-section-full#sponsor-packages .benefits-list ul {
   font-size: 16px;
   line-height: 20px;
+}
+.pg-section-full#sponsor-packages .benefits-list ul {
+  font-size: 14px;
+  line-height: 18px;
   padding-top: 10px;
 }
 .pg-section-full#sponsor-packages .benefits-list ul li {
@@ -4258,18 +4253,16 @@ a {
   min-height: 80px;
 }
 .pg-section-full#stage-sponsor-package .stage-sponsor-text p {
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 16px;
+  line-height: 20px;
 }
 .pg-section-full#stage-sponsor-package .stage-info {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  padding: 0px 20px 20px 20px;
-  border: 5px solid #eda03f;
+  padding: 0px 15px 15px 15px;
+  background-color: #eda03f;
+  margin-bottom: 5px;
 }
 .pg-section-full#stage-sponsor-package .stage-info h3 {
-  margin: 0px auto 20px auto;
+  margin: 0px auto 10px auto;
   width: 80%;
   -webkit-border-top-right-radius: 0;
   -webkit-border-bottom-right-radius: 8px;
@@ -4286,6 +4279,8 @@ a {
   -moz-background-clip: padding-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  font-size: 18px;
+  line-height: 18px;
 }
 .pg-section-full#stage-sponsor-package .stage-info p.price {
   font-size: 40px;
@@ -4371,11 +4366,11 @@ a {
   }
 }
 #map-and-directions-section {
-  border-top: 10px solid #006f9c;
+  border-top: 2px solid #006f9c;
 }
 #map-wrapper {
   position: relative;
-  border-bottom: 10px solid #eda03f;
+  border-bottom: 2px solid #eda03f;
 }
 #map-wrapper .section-header {
   position: absolute;
@@ -4387,39 +4382,55 @@ a {
 #attitude-plug {
   background-color: #333;
   color: #fad932;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-weight: bold;
   text-align: center;
 }
 #attitude-plug .plug-logo {
-  height: 100px;
+  height: 60px;
+  margin-bottom: 10px;
   background-image: url(img/attitude-is-everything-logo.png);
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: center top;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain;
 }
+@media screen and (orientation: landscape) {
+  #attitude-plug .plug-logo {
+    width: 40%;
+    float: left;
+    margin-bottom: 10px;
+    background-position: left top;
+  }
+}
 #attitude-plug span {
   display: block;
   margin-top: 5px;
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 20px;
+}
+@media screen and (orientation: landscape) {
+  #attitude-plug span {
+    width: 60%;
+    float: right;
+    margin-bottom: 10px;
+  }
 }
 #attitude-plug a {
-  height: 80px;
-  border: 5px solid #fad932;
+  height: 44px;
+  border: 2px solid #fad932;
   background-color: transparent;
   color: #fad932;
   font-size: 20px;
-  line-height: 70px;
+  line-height: 40px;
   text-align: left;
   margin-top: 10px;
 }
 #attitude-plug a i {
-  line-height: 70px;
+  line-height: 40px;
 }
 #attitude-plug a:hover,
 #attitude-plug a:active,
@@ -4427,20 +4438,25 @@ a {
   background-color: #fad932;
   color: #333;
 }
+@media screen and (orientation: landscape) {
+  #attitude-plug a {
+    clear: both;
+  }
+}
 .info-panel {
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  padding: 0px 40px 20px 40px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 0px 15px 15px 15px;
   position: relative;
 }
-.info-panel.add-min-h {
-  min-height: 320px;
+.info-panel#sponsor-enquiries-panel {
+  margin-bottom: 20px;
 }
 .info-panel .sponsor-icon-img {
-  height: 200px;
-  width: 150px;
-  margin: -60px auto 0px auto;
+  height: 140px;
+  width: 100px;
+  margin: -40px auto 0px auto;
   background-image: url(img/sponsor-rosette.png);
   background-repeat: no-repeat;
   background-position: center top;
@@ -4450,24 +4466,26 @@ a {
   background-size: contain;
 }
 .info-panel h3.panel-header {
-  font-size: 20px;
+  font-size: 14px;
   background-color: #FFF;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   -webkit-border-top-right-radius: 0;
-  -webkit-border-bottom-right-radius: 10px;
-  -webkit-border-bottom-left-radius: 10px;
+  -webkit-border-bottom-right-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
   -webkit-border-top-left-radius: 0;
   -moz-border-radius-topright: 0;
-  -moz-border-radius-bottomright: 10px;
-  -moz-border-radius-bottomleft: 10px;
+  -moz-border-radius-bottomright: 8px;
+  -moz-border-radius-bottomleft: 8px;
   -moz-border-radius-topleft: 0;
   border-top-right-radius: 0;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
   border-top-left-radius: 0;
   -moz-background-clip: padding-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 .info-panel span.panel-label {
   font-size: 16px;
@@ -4498,7 +4516,7 @@ a {
   font-size: 18px;
 }
 .info-panel .panel-imgs-2 img {
-  border: 4px solid #FFF;
+  border: 2px solid #FFF;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -4520,8 +4538,8 @@ a {
   line-height: 18px;
 }
 .info-panel .panel-text {
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 16px;
+  line-height: 20px;
 }
 .info-panel.panel-blue {
   background: #009ee3;
@@ -4535,14 +4553,14 @@ a {
   margin-top: 20px;
   background-color: #eda03f;
   border: 5px solid #FFF;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  height: 70px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  height: 60px;
   color: #FFF;
   padding: 0px;
-  line-height: 60px;
-  font-size: 20px;
+  line-height: 50px;
+  font-size: 16px;
 }
 .info-panel.panel-blue a.contact-btn:hover,
 .info-panel.panel-blue a.contact-btn:active,
@@ -4559,19 +4577,19 @@ a {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eda03f', endColorstr='#a3712b', GradientType=0);
 }
 .info-panel .contact-info {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 25px;
 }
 .info-panel .contact-info.panel-tel:after,
 .info-panel .contact-info.panel-email:after,
 .info-panel .contact-info.panel-name:after {
   float: left;
   font-family: FontAwesome;
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 25px;
+  line-height: 25px;
   color: #FFF;
-  width: 40px;
-  height: 30px;
+  width: 30px;
+  height: 25px;
   -moz-opacity: 0.5;
   -khtml-opacity: 0.5;
   -webkit-opacity: 0.5;
@@ -4580,7 +4598,7 @@ a {
   filter: alpha(opacity=50);
 }
 .info-panel .contact-info.panel-tel {
-  font-size: 30px;
+  font-size: 20px;
 }
 .info-panel .contact-info.panel-tel a {
   color: #FFF;
@@ -4597,8 +4615,8 @@ a {
 .info-panel .contact-info.panel-email a {
   color: #FFF;
   text-decoration: none;
-  font-size: 15px;
-  line-height: 30px;
+  font-size: 12px;
+  line-height: 25px;
 }
 .info-panel .contact-info.panel-email a:hover,
 .info-panel .contact-info.panel-email a:active,
@@ -4647,9 +4665,11 @@ a {
 .info-panel .contact-info-sml a:focus {
   color: #eda03f;
 }
-@media screen and (orientation: portrait) {
-  .info-panel.with-mag-bot {
-    margin-bottom: 30px;
+@media screen and (orientation: landscape) {
+  .info-panel#sponsor-enquiries-panel {
+    width: 55%;
+    float: left;
+    margin-bottom: 0px;
   }
 }
 .social-media-stats {
@@ -4696,39 +4716,47 @@ a {
   -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
   display: block;
-  margin: 0px auto 20px auto;
+  margin: 0px auto 10px auto;
+  max-width: 150px;
 }
 .download-panel span {
   font-size: 16px;
   line-height: 20px;
   display: block;
+  text-align: center;
+  margin-bottom: 10px;
 }
 .download-panel a.download-btn {
-  margin-top: 28px;
   background-color: #006f9c;
   border: 5px solid #eda03f;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  height: 70px;
+  height: 50px;
   color: #FFF;
   padding: 0px;
-  line-height: 60px;
-  font-size: 20px;
+  line-height: 40px;
+  font-size: 16px;
 }
 .download-panel a.download-btn:hover,
 .download-panel a.download-btn:active,
 .download-panel a.download-btn:focus {
   background-color: #eda03f;
 }
-@media screen and (orientation: portrait) {
-  .download-panel span {
-    text-align: center;
+@media screen and (orientation: landscape) {
+  .download-panel {
+    width: 40%;
+    float: right;
   }
-  .download-panel a.download-btn {
-    height: 50px;
-    line-height: 40px;
-    font-size: 16px;
+  .download-panel span {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .download-panel img {
+    margin-right: 0px;
+    margin-left: 0px;
+    max-width: 120px;
+    margin-bottom: 20px;
   }
 }
 #sponsors-and-stalls .sponsors-outer-wrap {
@@ -5167,35 +5195,38 @@ a {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
-  border: 10px solid #006f9c;
-  padding: 0px 40px 0px 40px;
-  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  border: 5px solid #006f9c;
+  padding: 0px 20px 0px 20px;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
   background-color: #FFF;
 }
 #main-content .no-content-message .message-img {
   margin-top: -30px;
 }
+#main-content .no-content-message .message-img img {
+  max-width: 200px;
+}
 #main-content .no-content-message h1 {
-  font-size: 50px;
-  line-height: 45px;
+  font-size: 30px;
+  line-height: 28px;
 }
 #main-content .no-content-message p {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 18px;
   font-weight: bold;
   color: #006f9c;
   margin-bottom: 0px;
 }
 #main-content .no-content-message .social-links {
-  margin-top: 20px;
-  margin-bottom: -30px;
+  margin-top: 10px;
+  margin-bottom: -20px;
 }
 #main-content .no-content-message .social-links a {
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 56px;
+  height: 56px;
   text-decoration: none;
   color: #FFF;
   padding-left: 5px;
@@ -5203,17 +5234,17 @@ a {
 }
 #main-content .no-content-message .social-links a i {
   display: block;
-  width: 100px;
-  height: 100px;
-  line-height: 90px;
+  width: 56px;
+  height: 56px;
+  line-height: 50px;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
-  border: 5px solid #FFF;
-  font-size: 50px;
-  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  border: 3px solid #FFF;
+  font-size: 30px;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
 }
 #main-content .no-content-message .social-links a i.fa-facebook {
   background-color: #3b5998;
@@ -5518,12 +5549,12 @@ a {
   margin-right: auto;
 }
 .contact-section .ticket-info {
-  font-size: 25px;
-  line-height: 35px;
+  font-size: 14px;
+  line-height: 20px;
 }
 .contact-section .ticket-info a.site-link {
   color: #eda03f;
-  font-size: 30px;
+  font-size: 25px;
 }
 .contact-section .ticket-info a.site-link:hover,
 .contact-section .ticket-info a.site-link:active,
@@ -5532,23 +5563,23 @@ a {
 }
 .contact-section .ticket-info .btn {
   padding: 0px;
-  line-height: 80px;
+  line-height: 40px;
   border: 5px solid #006f9c;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  border-radius: 12px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
   background-color: #006f9c;
   color: #FFF;
-  font-size: 30px;
+  font-size: 16px;
 }
 .contact-section .ticket-info .btn:before,
 .contact-section .ticket-info .btn:after {
   font-family: FontAwesome;
-  width: 80px;
-  line-height: 80px;
+  width: 40px;
+  line-height: 40px;
   text-align: center;
   color: #eda03f;
-  font-size: 40px;
+  font-size: 25px;
 }
 .contact-section .ticket-info .btn:before {
   content: "\f145";
@@ -5557,7 +5588,7 @@ a {
 .contact-section .ticket-info .btn:after {
   content: "\f054";
   float: right;
-  font-size: 30px;
+  font-size: 20px;
 }
 .contact-section .ticket-info .btn:hover,
 .contact-section .ticket-info .btn:active,
@@ -5833,20 +5864,20 @@ figure.alignnone {
   display: none;
 }
 #contact-form h3.section-header {
-  font-size: 20px;
-  line-height: 16px;
-  padding-bottom: 20px;
+  font-size: 16px;
+  line-height: 14px;
+  padding-bottom: 10px;
   -webkit-border-top-right-radius: 0;
-  -webkit-border-bottom-right-radius: 10px;
-  -webkit-border-bottom-left-radius: 10px;
+  -webkit-border-bottom-right-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
   -webkit-border-top-left-radius: 0;
   -moz-border-radius-topright: 0;
-  -moz-border-radius-bottomright: 10px;
-  -moz-border-radius-bottomleft: 10px;
+  -moz-border-radius-bottomright: 8px;
+  -moz-border-radius-bottomleft: 8px;
   -moz-border-radius-topleft: 0;
   border-top-right-radius: 0;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
   border-top-left-radius: 0;
   -moz-background-clip: padding-box;
   -webkit-background-clip: padding-box;
@@ -5854,21 +5885,21 @@ figure.alignnone {
   background-color: #FFF;
 }
 #contact-form .gform_confirmation_message {
-  padding: 40px;
+  padding: 15px;
   background-color: #5bae31;
   color: #FFF;
   border: 5px solid #FFF;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
   text-align: center;
 }
 #contact-form .gform_confirmation_message h3 {
-  font-size: 50px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 #contact-form .gform_confirmation_message p {
-  font-size: 30px;
+  font-size: 14px;
 }
 #contact-form .gform_wrapper {
   margin: 0px;
@@ -5876,12 +5907,13 @@ figure.alignnone {
 }
 #contact-form .gform_wrapper .gform_heading {
   text-align: center;
-  font-size: 20px;
+  font-size: 14px;
   color: #FFF;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 #contact-form .gform_wrapper .gform_heading .gform_description {
   font-weight: bold;
+  margin-bottom: 0px;
 }
 #contact-form .gform_wrapper input[type=text],
 #contact-form .gform_wrapper input[type=url],
@@ -5889,8 +5921,8 @@ figure.alignnone {
 #contact-form .gform_wrapper input[type=tel],
 #contact-form .gform_wrapper input[type=number],
 #contact-form .gform_wrapper input[type=password] {
-  height: 60px;
-  border: 5px solid #FFF;
+  height: 40px;
+  border: 2px solid #FFF;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
@@ -5933,27 +5965,28 @@ figure.alignnone {
   border: 1px solid #009ee3;
 }
 #contact-form .gform_wrapper div.validation_error {
-  font-size: 20px !important;
+  font-size: 14px !important;
   margin-bottom: 20px !important;
-  margin-top: 15px;
+  margin-top: 10px;
+  padding: 10px;
   text-align: center;
   border: none;
   background-color: #790000;
   color: #FFF;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
 }
 #contact-form .gform_wrapper .gfield_label {
-  font-size: 20px;
+  font-size: 14px;
   color: #FFF;
 }
 #contact-form .gform_wrapper .gfield.gfield_error {
   padding-left: 20px;
   border: none;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
 }
 #contact-form .gform_wrapper .gfield.gfield_error .gfield_label {
   color: #790000;
@@ -5965,7 +5998,7 @@ figure.alignnone {
 #contact-form .gform_wrapper .gfield.gfield_error input[type=number],
 #contact-form .gform_wrapper .gfield.gfield_error input[type=password] {
   border-color: #790000;
-  width: 98% !important;
+  width: 94% !important;
 }
 #contact-form .gform_wrapper .gfield.gfield_error input[type=text]:focus,
 #contact-form .gform_wrapper .gfield.gfield_error input[type=url]:focus,
@@ -5980,21 +6013,21 @@ figure.alignnone {
   max-width: 100%;
 }
 #contact-form .gform_wrapper .gfield .validation_message {
-  font-size: 16px;
+  font-size: 14px;
 }
 #contact-form .gform_wrapper .gform_footer button.gform_button {
   display: block;
   width: 98%;
   background-color: #a3712b;
   color: #FFF;
-  line-height: 60px;
+  line-height: 40px;
   padding: 0px;
-  font-size: 25px;
+  font-size: 20px;
   text-decoration: none;
   border: 5px solid #a3712b;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  border-radius: 12px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
 }
 #contact-form .gform_wrapper .gform_footer button.gform_button:hover,
 #contact-form .gform_wrapper .gform_footer button.gform_button:active,

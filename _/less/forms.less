@@ -1,27 +1,27 @@
 #contact-form {
 	
 	h3.section-header {
-	.font-size(2);
-	.line-h(1.6);
-	.pad-bot(2);
-	.border-radius(0, 10px, 10px, 0);
+	.font-size(1.6);
+	.line-h(1.4);
+	.pad-bot(1);
+	.border-radius(0, 8px, 8px, 0);
 	.bg-col-wht;
 	}
 	
 	.gform_confirmation_message {
-	.pad-all(4);
+	.pad-all(1.5);
 	.bg-col-green;
 	.txt-col-wht;
 	.border(@wht; 0.5);
-	.rounded(@radius: 10px);
+	.rounded(@radius: 8px);
 	text-align: center;
 		h3 {
-		.font-size(5);
+		.font-size(2);
 		.mag-bot-10;	
 		}	
 		
 		p {
-		.font-size(3);	
+		.font-size(1.4);	
 		}
 	}
 	
@@ -31,11 +31,12 @@
 		
 		.gform_heading {
 		text-align: center;
-		.font-size(2);	
+		.font-size(1.4);	
 		.txt-col-wht;
-		.mag-bot-10;
+		.mag-bot-0;
 			.gform_description {
 			.bold;	
+			.mag-bot-0;
 			}
 		}
 		
@@ -45,8 +46,8 @@
 		input[type=tel],
 		input[type=number],
 		input[type=password] {
-		.h(6);
-		.border(@wht; 0.5);
+		.h(4);
+		.border(@wht; 0.2);
 		.rounded(8px);
 		.pad-left(1);
 		width: 100% !important;
@@ -80,18 +81,19 @@
 		}
 		
 		div.validation_error {
-		.font-size(2) !important;	
+		.font-size(1.4) !important;	
 		.mag-bot(2) !important;
-		.mag-top(1.5);
+		.mag-top(1);
+		.pad-all(1);
 		text-align: center;
 		.no-border;
 		.bg-col(@error);
 		.txt-col-wht;
-		.rounded(10px);
+		.rounded(8px);
 		}
 			
 		.gfield_label {
-		.font-size(2);
+		.font-size(1.4);
 		.txt-col-wht;	
 		}
 		
@@ -99,7 +101,7 @@
 			&.gfield_error {
 			.pad-left(2);
 			.no-border;
-			.rounded(10px);
+			.rounded(8px);
 				.gfield_label {
 				.col(@error);	
 				}	
@@ -111,7 +113,7 @@
 				input[type=number],
 				input[type=password] {
 				.border-col(@error);
-				width: 98% !important;
+				width: 94% !important;
 					&:focus {
 					.bg-col-wht;
 					}
@@ -124,7 +126,7 @@
 			}
 			
 			.validation_message {
-			.font-size(1.6);	
+			.font-size(1.4);	
 			}
 		}
 
@@ -136,12 +138,12 @@
 			width: 98%;
 			.bg-col-orange-dk;
 			.txt-col-wht;
-			.line-h(6);
+			.line-h(4);
 			.pad-all(0);
-			.font-size(2.5);
+			.font-size(2);
 			.no-text-dec;
 			.border(@orange-dk; 0.5);
-			.rounded(12px);
+			.rounded(8px);
 				
 				&:hover, &:active, &:focus {
 				.bg-col-blue-dk;

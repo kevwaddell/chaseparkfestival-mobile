@@ -7,24 +7,19 @@ $service_extra_info = get_field('service_extra_info', 'options');
 <section id="service-assistance-section" class="pg-section-full bg-col-orange">
 		<h2 class="section-header text-center bg-col-wht txt-col-orange tk-azo-sans-uber">Service and assistance</h2>
 		<div class="container-fluid">
-			<div class="row">
-				
-				<div class="col-xs-10 col-xs-offset-1">
-				<?php if (!empty($service_info_left_text)) { ?>
-				<dl class="info-list txt-col-wht bold">
-					<?php foreach ($service_info_left_text as $item) { ?>
-					<dt class="text-uppercase txt-col-blue-dk"><i class="fa <?php echo $item['service_info_icon']; ?> text-center bg-col-wht txt-col-blue-dk"></i><?php echo $item['title']; ?></dt>
-					<dd><?php echo $item['text']; ?></dd>
-					<?php } ?>
-					<?php foreach ($service_info_right_text as $item) { ?>
-					<dt class="text-uppercase txt-col-blue-dk"><i class="fa <?php echo $item['service_info_icon']; ?> text-center bg-col-wht txt-col-blue-dk"></i><?php echo $item['title']; ?></dt>
-					<dd><?php echo $item['text']; ?></dd>
-					<?php } ?>
-				</dl>
-				<?php } ?>
-				</div>	
 
-			</div>	
+			<?php if (!empty($service_info_left_text)) { ?>
+			<dl class="info-list txt-col-wht bold">
+				<?php foreach ($service_info_left_text as $item) { ?>
+				<dt class="text-uppercase txt-col-blue-dk"><i class="fa <?php echo $item['service_info_icon']; ?> text-center bg-col-wht txt-col-blue-dk"></i><?php echo $item['title']; ?></dt>
+				<dd><?php echo $item['text']; ?></dd>
+				<?php } ?>
+				<?php foreach ($service_info_right_text as $item) { ?>
+				<dt class="text-uppercase txt-col-blue-dk"><i class="fa <?php echo $item['service_info_icon']; ?> text-center bg-col-wht txt-col-blue-dk"></i><?php echo $item['title']; ?></dt>
+				<dd><?php echo $item['text']; ?></dd>
+				<?php } ?>
+			</dl>
+			<?php } ?>
 
 		</div>
 		<?php if ($service_extra_info) { ?>
