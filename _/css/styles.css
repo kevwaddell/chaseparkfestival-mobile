@@ -3934,8 +3934,8 @@ a.book-tickets-btn-lg:focus:after {
   background-color: #eda03f;
 }
 #main-content .main-txt .main-text-header h1 {
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 25px;
+  line-height: 30px;
   margin-bottom: 0px;
 }
 #main-content .main-txt .main-text-header a.artist-website {
@@ -3956,9 +3956,9 @@ a.book-tickets-btn-lg:focus:after {
 }
 #main-content .main-txt .feat-img {
   width: 100%;
-  height: 160px;
+  height: 200px;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
