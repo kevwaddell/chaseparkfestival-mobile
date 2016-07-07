@@ -9,7 +9,7 @@ $contact_page = get_page_by_title("Contact us");
 <div class="info-panel blue-grad with-icon">
 	<i class="icon fa fa-bullhorn bg-col-blue-dk txt-col-wht text-center"></i>
 	<h3 class="txt-col-orange text-center tk-azo-sans-uber">Past Media Coverage</h3>
-	<div class="panel-inner">
+	<div class="panel-inner col-list-2">
 		
 		<?php if (!empty($p_and_d_coverage)) { ?>
 		<span class="panel-label block bg-col-wht text-center txt-col-blue tk-azo-sans-uber">Print/Digital</span>
