@@ -763,15 +763,7 @@ border: @orange 2px dashed;
 
 #sponsors-and-stalls {
 	
-	.sponsors-outer-wrap {
-	.h(11);	
-	}
-	
-	.carousel-inner {
-	.h(11);	
-	}
-	
-	.sponsors-inner-wrap {
+	.sponsors-outer-wrap, .carousel-inner, .sponsors-inner-wrap  {
 	.h(11);	
 	}
 	
@@ -779,7 +771,10 @@ border: @orange 2px dashed;
 	width: 70%;
 	.mag-auto;
 	.h(10);	
-	.pad-all(1);
+	.pad(0.5; 1.5; 0.5; 1.5);
+	.bg-col-wht;
+	.drop-shadow(0, 3px, 5px, 0.5);
+	.rounded(4px);
 		a {
 		.block;
 		width: 100%;
@@ -789,9 +784,7 @@ border: @orange 2px dashed;
 		.bg-col-wht;
 		.bg-repeat();
 		background-position: center center;
-		.bg-size(80%);	
-		.rounded(4px);
-		.drop-shadow(0, 3px, 5px, 0.5);
+		.bg-size(contain);	
 			
 			&:hover, &:active, &:focus {
 			.opacity(@opacity: 0.5);
@@ -808,6 +801,17 @@ border: @orange 2px dashed;
 				.line-h(5);
 				}
 			}		
+		}
+	}
+	
+	@media screen and (orientation: landscape) {
+		.sponsors-outer-wrap, .carousel-inner, .sponsors-inner-wrap  {
+		.h(15);	
+		}
+		
+		.sponsor-logo {
+		width: 50%;
+		.h(14);	
 		}
 	}
 }

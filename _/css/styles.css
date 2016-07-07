@@ -4768,12 +4768,8 @@ a.book-tickets-btn-lg:focus:after {
     margin-bottom: 20px;
   }
 }
-#sponsors-and-stalls .sponsors-outer-wrap {
-  height: 110px;
-}
-#sponsors-and-stalls .carousel-inner {
-  height: 110px;
-}
+#sponsors-and-stalls .sponsors-outer-wrap,
+#sponsors-and-stalls .carousel-inner,
 #sponsors-and-stalls .sponsors-inner-wrap {
   height: 110px;
 }
@@ -4781,7 +4777,14 @@ a.book-tickets-btn-lg:focus:after {
   width: 70%;
   margin: auto;
   height: 100px;
-  padding: 10px;
+  padding: 5px 15px 5px 15px;
+  background-color: #FFF;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
 #sponsors-and-stalls .sponsor-logo a {
   display: block;
@@ -4792,16 +4795,10 @@ a.book-tickets-btn-lg:focus:after {
   background-color: #FFF;
   background-repeat: no-repeat;
   background-position: center center;
-  -webkit-background-size: 80%;
-  -moz-background-size: 80%;
-  -o-background-size: 80%;
-  background-size: 80%;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 #sponsors-and-stalls .sponsor-logo a:hover,
 #sponsors-and-stalls .sponsor-logo a:active,
@@ -4826,6 +4823,17 @@ a.book-tickets-btn-lg:focus:after {
   text-align: center;
   font-size: 30px;
   line-height: 50px;
+}
+@media screen and (orientation: landscape) {
+  #sponsors-and-stalls .sponsors-outer-wrap,
+  #sponsors-and-stalls .carousel-inner,
+  #sponsors-and-stalls .sponsors-inner-wrap {
+    height: 150px;
+  }
+  #sponsors-and-stalls .sponsor-logo {
+    width: 50%;
+    height: 140px;
+  }
 }
 .img-viewer {
   position: fixed;
