@@ -4032,12 +4032,13 @@ a.book-tickets-btn-lg:focus:after {
   color: #00aced;
 }
 @media screen and (orientation: landscape) {
-  .social-section-links {
-    /*
-a {
-		.pad-top(3.2);	
-		}
-*/
+  .social-section-links a {
+    width: 50%;
+    float: left;
+    border: none;
+  }
+  .social-section-links a:first-child {
+    border-right: 2px solid #eda03f;
   }
 }
 /* .social-section-links */
