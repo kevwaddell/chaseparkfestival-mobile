@@ -160,7 +160,7 @@ jQuery(document).ready(function( $ ) {
 		$(img_viewer).find('.img').attr('data-prev-img', prev_img);
 		$(img_viewer).find('.img').attr('data-next-img', next_img);
 		$(img_viewer).find('.img-caption').text(current_caption);
-		$(img_viewer).find('.img').append('<img src="'+current_img+'" />');
+		$(img_viewer).find('.img').append('<img src="'+current_img+'" class="img-responsive" />');
 		
 		$(img_viewer).removeClass('inactive').addClass('fadeInUpBig').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 			$(this).removeClass('fadeInUpBig').addClass('active');
