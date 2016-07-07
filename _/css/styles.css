@@ -3982,7 +3982,15 @@ a.book-tickets-btn-lg:focus:after {
 /* --------------------------- */
 /* SOCIAL LINKS SECTIONS */
 .social-section-links {
-  border-bottom: 2px solid #eda03f;
+  border-bottom: 5px solid #eda03f;
+}
+.social-section-links:before,
+.social-section-links:after {
+  content: " ";
+  display: table;
+}
+.social-section-links:after {
+  clear: both;
 }
 .social-section-links.with-pad {
   padding-top: 40px;
