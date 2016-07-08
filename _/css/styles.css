@@ -3348,15 +3348,16 @@ h5 {
   height: 0px;
 }
 #main-nav.nav-open {
-  height: 87vh;
+  height: auto;
 }
 #main-nav .nav-wrapper {
   height: 100%;
-  border-bottom: 5px solid #FFF;
+  border-bottom: 3px solid #FFF;
 }
 #main-nav ul.quick-menu {
   background-color: #FFF;
   margin-bottom: 0px;
+  margin-right: 42px;
 }
 #main-nav ul.quick-menu:before,
 #main-nav ul.quick-menu:after {
@@ -3401,7 +3402,7 @@ h5 {
   margin-bottom: 0px;
 }
 #main-nav ul.menu li {
-  border-bottom: 5px solid #FFF;
+  border-bottom: 2px solid #FFF;
 }
 #main-nav ul.menu a {
   text-decoration: none;
@@ -3434,7 +3435,7 @@ h5 {
 #main-nav #close-nav-btn {
   position: absolute;
   right: 0px;
-  bottom: 0px;
+  top: 0px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;

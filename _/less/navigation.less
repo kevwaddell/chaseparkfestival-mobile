@@ -8,18 +8,19 @@ width: 100%;
 	}
 	
 	&.nav-open {
-	height: 87vh;	
+	height: auto;	
 	}
 	
 	.nav-wrapper {	
 	height: 100%;
-	.border-bot(@wht; 0.5);
+	.border-bot(@wht; 0.3);
 	}
 	
 	ul.quick-menu {
 	.clearfix;
 	.bg-col-wht;
 	.mag-bot-0;
+	.mag-right(4.2);
 		li {
 		.fleft;
 		width: 25%;	
@@ -52,7 +53,7 @@ width: 100%;
 	.mag-bot(0);
 	
 		li {
-		.border-bot(@wht; 0.5);	
+		.border-bot(@wht; 0.2);	
 		}
 		a {
 		.no-text-dec;
@@ -84,7 +85,7 @@ width: 100%;
 	#close-nav-btn {
 	.abs;
 	.right(0);
-	.bottom(0);
+	.top(0);
 	.no-rounded;	
 	.w(4);
 	.h(4);
