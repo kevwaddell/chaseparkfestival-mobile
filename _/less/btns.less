@@ -1,18 +1,18 @@
 a.book-tickets-btn-lg {
 	.pad-all(0);
-	.h(4);
-	.line-h(4);
+	.h(5.3);
+	.line-h(5);
 	.font-size(1.8);
 	.bg-col-orange;
 	.txt-col-wht;
 	.rel;
-	.rounded(8px);
 	.no-border;
+	.no-rounded;
+	.border-top(@wht; 0.3);
 	
 		&:before, &:after {
 		font-family: FontAwesome;	
-		.w(4);
-		.line-h(4);	
+		.line-h(5);	
 		text-align: center;
 		.txt-col-blue-dk;
 		.font-size(1.8);
@@ -21,13 +21,14 @@ a.book-tickets-btn-lg {
 		&:before {
 		content: "\f145";
 		.fleft;	
+		.pad-left(1);
 		}
 		
 		&:after {
 		content: "\f054";	
 		.fright;	
-		.font-size(1.6);
-		.line-h(4.2);	
+		.pad-right(1);
+		.font-size(1.4);
 		}
 		
 		&:hover, &:active, &:focus {

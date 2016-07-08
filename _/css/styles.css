@@ -3527,22 +3527,22 @@ nav.more-links a span:after {
 }
 a.book-tickets-btn-lg {
   padding: 0px;
-  height: 40px;
-  line-height: 40px;
+  height: 53px;
+  line-height: 50px;
   font-size: 18px;
   background-color: #eda03f;
   color: #FFF;
   position: relative;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
   border: none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border-top: 3px solid #FFF;
 }
 a.book-tickets-btn-lg:before,
 a.book-tickets-btn-lg:after {
   font-family: FontAwesome;
-  width: 40px;
-  line-height: 40px;
+  line-height: 50px;
   text-align: center;
   color: #006f9c;
   font-size: 18px;
@@ -3550,12 +3550,13 @@ a.book-tickets-btn-lg:after {
 a.book-tickets-btn-lg:before {
   content: "\f145";
   float: left;
+  padding-left: 10px;
 }
 a.book-tickets-btn-lg:after {
   content: "\f054";
   float: right;
-  font-size: 16px;
-  line-height: 42px;
+  padding-right: 10px;
+  font-size: 14px;
 }
 a.book-tickets-btn-lg:hover,
 a.book-tickets-btn-lg:active,
@@ -3626,7 +3627,6 @@ a.book-tickets-btn-lg:focus:after {
   }
 }
 #hp-masthead {
-  height: 70vh;
   background-image: url(img/hp-mast-image-bg.jpg);
   background-repeat: no-repeat;
   background-position: right center;
@@ -3652,6 +3652,7 @@ a.book-tickets-btn-lg:focus:after {
 }
 #hp-masthead .masthead-wrap {
   padding-top: 60px;
+  padding-bottom: 80px;
   height: 100%;
   position: relative;
   z-index: 2;
@@ -3698,27 +3699,31 @@ a.book-tickets-btn-lg:focus:after {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
 }
 @media screen and (orientation: landscape) {
-  #hp-masthead {
-    height: 70vh;
-  }
   #hp-masthead .masthead-wrap {
-    padding-top: 25px;
+    padding-top: 10px;
+    padding-bottom: 60px;
   }
   #hp-masthead .logo-wrap {
     height: 100px;
   }
   #hp-masthead .date-location {
     padding-right: 50px;
+    padding-left: 50px;
   }
   #hp-masthead .date-location .dl-item {
     display: inline-block;
     color: #FFF;
     font-size: 14px;
+  }
+  #hp-masthead a.book-tickets-btn-lg {
+    height: 43px;
+    line-height: 40px;
+  }
+  #hp-masthead a.book-tickets-btn-lg:before,
+  #hp-masthead a.book-tickets-btn-lg:after {
+    line-height: 40px;
   }
 }
 #gbl-masthead {

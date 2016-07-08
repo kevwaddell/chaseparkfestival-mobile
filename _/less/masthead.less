@@ -50,7 +50,7 @@
 
 #hp-masthead {
 //.h(75);
-height: 70vh;
+//height: 75vh;
 .bg-img("hp-mast-image-bg.jpg");
 .bg-repeat;
 background-position: right center;
@@ -72,6 +72,7 @@ background-position: right center;
 	
 	.masthead-wrap {
 	.pad-top(6);
+	.pad-bot(8);
 	height: 100%;	
 	.rel;
 	z-index: 2;
@@ -118,13 +119,13 @@ background-position: right center;
 	.left(0);
 	.right(0);
 	.bottom(0);
-	.no-rounded;
 	}
 	
 	@media screen and (orientation: landscape) {
-	height: 70vh;
+		
 		.masthead-wrap {
-		.pad-top(2.5);
+		.pad-top(1);
+		.pad-bot(6);
 		}
 		
 		.logo-wrap {
@@ -133,12 +134,21 @@ background-position: right center;
 		
 		.date-location {
 		.pad-right(5);
+		.pad-left(5);
 			.dl-item {
 			.in-block;	
 			.txt-col-wht;
 			.font-size(1.4);
 			}
 		
+		}
+		
+		a.book-tickets-btn-lg {
+		.h(4.3);
+		.line-h(4);	
+			&:before, &:after {
+			.line-h(4);		
+			}
 		}
 	}
 
