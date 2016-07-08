@@ -3615,8 +3615,10 @@ a.book-tickets-btn-lg:focus:after {
   color: #FFF;
 }
 .masthead .festival-tag {
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 20px;
   letter-spacing: 3px;
+  text-shadow: 0px 3px 3px #141414;
 }
 @media screen and (orientation: landscape) {
   .masthead .festival-tag {
@@ -3649,7 +3651,7 @@ a.book-tickets-btn-lg:focus:after {
   background-size: cover;
 }
 #hp-masthead .masthead-wrap {
-  padding-top: 90px;
+  padding-top: 60px;
   height: 100%;
   position: relative;
   z-index: 2;
@@ -3678,10 +3680,17 @@ a.book-tickets-btn-lg:focus:after {
   -o-background-size: contain;
   background-size: contain;
 }
+#hp-masthead .date-location {
+  letter-spacing: 1px;
+}
 #hp-masthead .date-location .dl-item {
   display: inline-block;
   color: #FFF;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 16px;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-shadow: 0px 2px 3px #141414;
 }
 #hp-masthead a.book-tickets-btn-lg {
   width: auto;
