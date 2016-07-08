@@ -3695,7 +3695,7 @@ a.book-tickets-btn-lg:focus:after {
 }
 @media screen and (orientation: landscape) {
   #hp-masthead {
-    height: 65vh;
+    height: 70vh;
   }
   #hp-masthead .masthead-wrap {
     padding-top: 25px;
@@ -5575,14 +5575,14 @@ a.book-tickets-btn-lg:focus:after {
 }
 @media screen and (orientation: landscape) {
   #main-content .col-panel {
-    padding-top: 120px;
+    padding-top: 130px;
   }
   #main-content .col-panel .panel-imgs.offset-imgs {
     top: -50px;
     left: 50%;
-    height: 250px;
-    width: 50%;
-    margin-left: -25%;
+    height: 190px;
+    width: 350px;
+    margin-left: -175px;
   }
 }
 #main-content .sidebar .info-panel {
