@@ -4,7 +4,7 @@ $main_stage_price = get_field('main_stage_price', 'options');
 $second_stage_price = get_field('second_stage_price', 'options');	
 ?>
 
-<section id="stage-sponsor-package" class="pg-section-full bg-col-blue-dk orange-border-top pad-bot-10">
+<section id="stage-sponsor-package" class="pg-section-full bg-col-blue-dk orange-border-top">
 	<h2 class="section-header text-center bg-col-orange txt-col-wht tk-azo-sans-uber">Stage Sponsorship</h2>
 	<div class="container-fluid">
 		

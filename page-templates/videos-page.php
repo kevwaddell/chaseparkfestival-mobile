@@ -15,7 +15,6 @@ $videos_active = get_field('videos_active');
 	<h1><?php the_title(); ?></h1>
 </div>
 <main id="main-content"> 
-	<div class="container-fluid">
 <?php if ($videos_active) { ?>
 <?php  
 $videos = get_field('videos');	
@@ -39,7 +38,6 @@ global $wp_embed;
 <?php } else { ?>
 	<?php get_template_part( 'parts/messages/video', 'message' ); ?>
 <?php } ?>	
-	</div>
 
 </main><!-- #main-content -->
 <?php endwhile; ?>

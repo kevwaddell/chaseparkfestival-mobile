@@ -1,5 +1,6 @@
 /* SOCIAL LINKS SECTIONS */	
 .social-section-links {
+.border-top(@orange; 0.5);	
 .border-bot(@orange; 0.5);	
 .clearfix;
 	&.with-pad {
@@ -56,6 +57,8 @@
 		width: 50%;
 		.fleft;	
 		.no-border;
+		.font-size(1.5);
+		.line-h(1.7);
 			&:first-child {
 			.border-right(@orange; 0.5);
 			}
@@ -73,9 +76,8 @@
 	.pad-right(2);
 	.border-radius(0, 8px, 8px, 0);	
 	.mag-bot(1);
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
+	.mag-left(6.5);
+	.mag-right(6.5);
 	}	
 }
 
@@ -85,7 +87,7 @@
 	.section-header {
 	width: 80%;
 	.mag-auto;	
-	.font-size(1.4);
+	.font-size(1.6);
 	.line-h(1.4);
 	.pad-bot-10;
 	.border-radius(0, 8px, 8px, 0);
@@ -197,10 +199,10 @@
 		}
 		
 		@media screen and (orientation: landscape) {
-		.pad-left(3);
-		.pad-right(3)	
+		.pad-left(5);
+		.pad-right(5);	
 			.section-header {
-			width: 100%;	
+			width: 95%;	
 			}
 		}
 	}
@@ -254,13 +256,13 @@
 		.rounded(8px);
 	
 			span {
-			.font-size(1.6);
-			.line-h(2);	
+			.font-size(2);
+			.line-h(2.5);	
 			}
 			
 			ul {
-			.font-size(1.4);
-			.line-h(1.8);	
+			.font-size(1.8);
+			.line-h(2.2);	
 			.pad-top-10;
 				
 				li {
@@ -283,11 +285,11 @@
 		}
 	
 		@media screen and (orientation: landscape) {
-		.pad-left(3);
-		.pad-right(3)	
+		.pad-left(5);
+		.pad-right(5);	
 		
 			.section-header {
-			width: 100%;	
+			width: 95%;	
 			}
 		}
 	} // #sponsor-packages
@@ -302,6 +304,9 @@
 		.pad(0;1.5;1.5;1.5);
 		.bg-col-orange;
 		.mag-bot(0.5);
+			&:last-child {
+			.mag-bot-0;	
+			}
 			h3 {
 			margin: 0px auto 10px auto;
 			width: 80%;
@@ -367,9 +372,10 @@
 				.no-text-dec;	
 				.font-size(1.4);
 				.line-h(3);
-				.left(0);
-				.bottom(1);
-				width: 100%;
+				left: 50%;
+				.bottom(1.5);
+				width: 90%;
+				margin-left: -45%;
 				
 					i {
 					.line-h(3);	
@@ -408,6 +414,14 @@
 		}
 	}
 	
+
+	
+	@media screen and (orientation: landscape) {
+		dl.info-list {
+		.pad-left(5);
+		.pad-right(5);
+		}
+	}
 }
 
 #map-and-directions-section {
@@ -522,25 +536,10 @@ text-align: center;
 	.mag-bot-10;
 	}
 	
-	ul.list-arrows {
+	ul.media-list {
 	.font-size(1.6);
 	.line-h(2.5);	
-		li:before {
-		font-family: FontAwesome;	
-		content: "\f138";
-		.txt-col-orange;	
-		}
-		li {
-		.pad-left(3);
-		.rel;
-		
-			&:before {
-			.abs;	
-			.left(0);
-			.top(0);
-			.font-size(1.8);
-			}
-		}
+	text-align: center;
 	}
 	
 	.panel-imgs-2 {
@@ -554,15 +553,12 @@ text-align: center;
 	.bg-col-orange;
 	.border(@wht; 0.2);
 	.txt-col-wht;	
-	.font-size(1.2);
+	.font-size(1.4);
+	.pad-right(0);
+	text-align: left;
 		&:hover, &:active, &:focus {
 		.bg-col-wht;
 		.txt-col-orange;
-		}
-		
-		i {
-		.fright;
-		.line-h(1.8);	
 		}
 	}
 	
@@ -631,7 +627,7 @@ text-align: center;
 			a {
 			.txt-col-wht;
 			.no-text-dec;
-			.font-size(1.2);
+			.font-size(1.4);
 			.line-h(2.5);
 				&:hover, &:active, &:focus {
 				.txt-col-orange;
@@ -661,8 +657,18 @@ text-align: center;
 		}
 		
 		@media screen and (orientation: landscape) {
-			&.col-list-2 {
-			.columns(50%, 2, 30px, #EEE, solid, 0px);	
+			
+			.panel-left, .panel-right {
+			width: 50%;	
+			.fleft;
+			}
+			
+			.panel-left {
+			.pad-right(1);	
+			}
+			
+			.panel-right {
+			.pad-left(1);	
 			}
 		}
 	}
@@ -693,17 +699,19 @@ text-align: center;
 	
 	@media screen and (orientation: landscape) {
 		
-		&#sponsor-enquiries-panel {
+		/*
+&#sponsor-enquiries-panel {
 		width: 55%;	
 		.fleft;
 		.mag-bot-0;
 		}
+*/
 	}
 }
 
 .social-media-stats {
 border: @orange 2px dashed;	
-.pad-all(1);
+.pad-all(1.5);
 .rounded(8px);
 .mag-top(3);
 .clearfix;
@@ -714,16 +722,17 @@ border: @orange 2px dashed;
 	}
 	
 	p {
-	.font-size(1.2) !important;
+	.font-size(1.4) !important;
 	.mag-bot-20 !important;	
 	}
 
 	.social-stat-wrap {
 	.rounded(8px);	
 	.pad(0;0.5;0.5;0.5);
+	.mag-bot-20;
 		
-		&:first-child {
-		.mag-bot-20;	
+		&:last-child {
+		.mag-bot-0;	
 		}
 		
 		i {
@@ -749,10 +758,7 @@ border: @orange 2px dashed;
 		.social-stat-wrap {
 		width: 49%;	
 		.fleft;
-		
-			&:first-child {
-			.mag-bot-0;	
-			}
+		.mag-bot-0;
 
 			&:last-child {
 			.fright;	
@@ -779,12 +785,12 @@ border: @orange 2px dashed;
 	
 	a.download-btn {
 	.bg-col-blue-dk;
-	.border(@orange; 0.5);
+	.border(@orange; 0.3);
 	.rounded(10px);	
 	.h(5);
 	.txt-col-wht;
 	.pad-all(0);
-	.line-h(4);
+	.line-h(4.4);
 	.font-size(1.6);
 		&:hover, &:active, &:focus {
 		.bg-col-orange;
@@ -793,28 +799,38 @@ border: @orange 2px dashed;
 	
 	
 	@media screen and (orientation: landscape) {
-		width: 40%;
-		.fright;
+		
+		img {
+		.fleft;
+		margin-right: 30px;
+		margin-left: 15%;
+		.max-w(12);	
+		.mag-bot-20;
+		}
 		
 		span {
 		text-align: left;	
 		.mag-bot-20;
+		.pad-right(5);
 		}
 		
-		img {
-		margin-right: 0px;
-		margin-left: 0px;
-		.max-w(12);	
-		.mag-bot-20;
+		a.download-btn {
+		clear: both;	
 		}
+		
 	}
 
 }
 
 #sponsors-and-stalls {
 	
-	.sponsors-outer-wrap, .carousel-inner, .sponsors-inner-wrap  {
-	.h(11);	
+	.sponsors-outer-wrap {
+	.pad-top-10;
+	.h(13);	
+	}
+	
+	.carousel-inner, .sponsors-inner-wrap  {
+	.h(12);	
 	}
 	
 	.sponsor-logo {
@@ -855,8 +871,13 @@ border: @orange 2px dashed;
 	}
 	
 	@media screen and (orientation: landscape) {
-		.sponsors-outer-wrap, .carousel-inner, .sponsors-inner-wrap  {
-		.h(15);	
+		
+		.sponsors-outer-wrap  {
+		.h(17);	
+		}
+		
+		.carousel-inner, .sponsors-inner-wrap  {
+		.h(16);	
 		}
 		
 		.sponsor-logo {
@@ -1336,7 +1357,7 @@ z-index: 2000;
 	
 	/* PANELS */
 	.col-panel {
-		.pad(8;0;2;0);
+		.pad(8;0;3;0);
 		.mag(2; 0; 0; 0);
 		.rel;
 		
@@ -1354,12 +1375,25 @@ z-index: 2000;
 			background-position: center top;
 			
 				@media screen and (orientation: landscape) {
-				.top(-10);
-				.left(0);
+				.top(-2);
+				left: 50%;
 				.bottom(-10);
 				width: 42%;
 				}
 			}
+		}
+		
+		@media screen and (orientation: landscape) {
+		.pad-top(12);
+				.panel-imgs {
+					&.offset-imgs {
+					.top(-5);
+					left: 50%;
+					.h(25);
+					width: 50%;
+					margin-left: -25%;
+					}
+				}
 		}
 		
 	} /* col-panel */
@@ -1490,7 +1524,7 @@ z-index: 2000;
 }
 
 #videos-section {
-
+.clearfix;
 	.video-wrap {
 		h3 {
 		.mag-top(0);
@@ -1559,6 +1593,16 @@ z-index: 2000;
 		}
 
 	}
-	
-	
+
+	@media screen and (orientation: landscape) {
+	.pad-left(5);
+	.pad-right(5);		
+	}
+}
+
+.info-panels {
+	@media screen and (orientation: landscape) {
+	.pad-left(5);
+	.pad-right(5);	
+	}
 }

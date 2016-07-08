@@ -50,8 +50,9 @@ $tickets_url = get_field('gbl_tickets_url', 'options');
 			 gravity_form_enqueue_scripts($form['id'], true);
 			?>
 			<section id="contact-form" class="bg-col-orange pad-bot-20">
+				<h3 class="section-header tk-azo-sans-uber txt-col-blue text-center">Enquiry form</h3>
 				<div class="container-fluid">
-					<h3 class="section-header tk-azo-sans-uber txt-col-blue text-center">Enquiry form</h3>
+					
 					<?php gravity_form($form['id'], false, true, false, '', true, 1);  ?>	
 				</div>
 			</section>		

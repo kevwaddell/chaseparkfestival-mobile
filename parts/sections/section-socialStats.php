@@ -5,7 +5,7 @@ $social_links = get_field('gbl_social_links', 'options');
 ?>
 
 <div class="social-media-stats text-center mag-bot-20">
-	<h3 class="tk-azo-sans-uber txt-col-orange">Social Media statistsics</h3>
+	<h3 class="tk-azo-sans-uber txt-col-orange">Social Media statistics</h3>
 	<p class="bold txt-col-blue-dk">Sponsors have the opportunity to reach</p>
 
 	<div class="social-stat-wrap bg-col-facebook">

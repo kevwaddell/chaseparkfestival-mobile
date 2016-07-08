@@ -3488,7 +3488,7 @@ nav.more-links a {
   text-decoration: none;
   color: #FFF;
   background-color: #eda03f;
-  font-size: 14px;
+  font-size: 16px;
   border-bottom: 5px solid #FFF;
 }
 nav.more-links a:last-child {
@@ -3516,14 +3516,14 @@ nav.more-links a:nth-child(2):focus {
   background-color: #006f9c;
 }
 nav.more-links a span {
-  line-height: 30px;
+  line-height: 40px;
 }
 nav.more-links a span:after {
   float: right;
   content: "\f054";
   font-family: FontAwesome;
-  font-size: 14px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 44px;
 }
 a.book-tickets-btn-lg {
   padding: 0px;
@@ -3533,16 +3533,16 @@ a.book-tickets-btn-lg {
   background-color: #eda03f;
   color: #FFF;
   position: relative;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
   border: none;
 }
 a.book-tickets-btn-lg:before,
 a.book-tickets-btn-lg:after {
   font-family: FontAwesome;
   width: 40px;
-  line-height: 43px;
+  line-height: 40px;
   text-align: center;
   color: #006f9c;
   font-size: 18px;
@@ -3555,6 +3555,7 @@ a.book-tickets-btn-lg:after {
   content: "\f054";
   float: right;
   font-size: 16px;
+  line-height: 42px;
 }
 a.book-tickets-btn-lg:hover,
 a.book-tickets-btn-lg:active,
@@ -3623,7 +3624,7 @@ a.book-tickets-btn-lg:focus:after {
   }
 }
 #hp-masthead {
-  height: 87vh;
+  height: 70vh;
   background-image: url(img/hp-mast-image-bg.jpg);
   background-repeat: no-repeat;
   background-position: right center;
@@ -3648,7 +3649,7 @@ a.book-tickets-btn-lg:focus:after {
   background-size: cover;
 }
 #hp-masthead .masthead-wrap {
-  padding-top: 70px;
+  padding-top: 90px;
   height: 100%;
   position: relative;
   z-index: 2;
@@ -3694,7 +3695,7 @@ a.book-tickets-btn-lg:focus:after {
 }
 @media screen and (orientation: landscape) {
   #hp-masthead {
-    height: 72vh;
+    height: 65vh;
   }
   #hp-masthead .masthead-wrap {
     padding-top: 25px;
@@ -3712,7 +3713,7 @@ a.book-tickets-btn-lg:focus:after {
   }
 }
 #gbl-masthead {
-  height: 100px;
+  height: 120px;
   background-image: url(img/gbl-mast-image-bg.jpg);
   background-repeat: no-repeat;
   background-position: left center;
@@ -3745,7 +3746,7 @@ a.book-tickets-btn-lg:focus:after {
 #gbl-masthead .logo-wrap {
   width: 80%;
   margin: auto;
-  height: 98px;
+  height: 110px;
 }
 #gbl-masthead .logo-wrap a.logo {
   display: inline-block;
@@ -3817,32 +3818,32 @@ a.book-tickets-btn-lg:focus:after {
 /* TYPOGRAHY */
 /* --------------------------- */
 .strip-header {
-  height: 30px;
-  font-size: 16px;
-  line-height: 30px;
+  height: 40px;
+  font-size: 18px;
+  line-height: 40px;
 }
 .strip-header h1,
 .strip-header h2 {
   margin-bottom: 0px;
-  font-size: 16px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 40px;
 }
 #main-content p {
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 22px;
   margin-bottom: 15px;
 }
 #main-content p:last-child {
   margin-bottom: 0px;
 }
 #main-content p.txt-lg {
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 20px;
+  line-height: 24px;
 }
 #main-content ul,
 #main-content ol {
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 22px;
 }
 #main-content hr {
   position: relative;
@@ -3890,16 +3891,16 @@ a.book-tickets-btn-lg:focus:after {
   margin-left: -5px;
 }
 #main-content .hp-content h1 {
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 25px;
+  line-height: 28px;
 }
 #main-content .main-txt.with-pad {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 #main-content .main-txt h2 {
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 25px;
+  line-height: 28px;
 }
 #main-content .main-txt .main-text-header {
   margin-bottom: 20px;
@@ -3936,7 +3937,7 @@ a.book-tickets-btn-lg:focus:after {
 }
 #main-content .main-txt .main-text-header h1 {
   font-size: 25px;
-  line-height: 30px;
+  line-height: 28px;
   margin-bottom: 0px;
 }
 #main-content .main-txt .main-text-header a.artist-website {
@@ -3978,11 +3979,30 @@ a.book-tickets-btn-lg:focus:after {
     margin-right: auto;
   }
 }
+@media screen and (orientation: landscape) {
+  #main-content .hp-content {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  #main-content .hp-content h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  #main-content .pg-content {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  #main-content .col-panel .panel-txt {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
 /* --------------------------- */
 /* SECTIONS */
 /* --------------------------- */
 /* SOCIAL LINKS SECTIONS */
 .social-section-links {
+  border-top: 5px solid #eda03f;
   border-bottom: 5px solid #eda03f;
 }
 .social-section-links:before,
@@ -4045,6 +4065,8 @@ a.book-tickets-btn-lg:focus:after {
     width: 50%;
     float: left;
     border: none;
+    font-size: 15px;
+    line-height: 17px;
   }
   .social-section-links a:first-child {
     border-right: 5px solid #eda03f;
@@ -4073,9 +4095,8 @@ a.book-tickets-btn-lg:focus:after {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   margin-bottom: 10px;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 65px;
+  margin-right: 65px;
 }
 .pg-section-full {
   min-height: 200px;
@@ -4083,7 +4104,7 @@ a.book-tickets-btn-lg:focus:after {
 .pg-section-full .section-header {
   width: 80%;
   margin: auto;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 14px;
   padding-bottom: 10px;
   -webkit-border-top-right-radius: 0;
@@ -4195,10 +4216,11 @@ a.book-tickets-btn-lg:focus:after {
 }
 @media screen and (orientation: landscape) {
   .pg-section-full#reason-2-sponsor {
-    padding-left: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
-  .pg-section-full#reason-2-sponsor .pad-right(3) .section-header {
-    width: 100%;
+  .pg-section-full#reason-2-sponsor .section-header {
+    width: 95%;
   }
 }
 .pg-section-full#sponsor-packages .package-wrap .icon-rosette {
@@ -4245,12 +4267,12 @@ a.book-tickets-btn-lg:focus:after {
   border-radius: 8px;
 }
 .pg-section-full#sponsor-packages .benefits-list span {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 20px;
+  line-height: 25px;
 }
 .pg-section-full#sponsor-packages .benefits-list ul {
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 18px;
+  line-height: 22px;
   padding-top: 10px;
 }
 .pg-section-full#sponsor-packages .benefits-list ul li {
@@ -4269,10 +4291,11 @@ a.book-tickets-btn-lg:focus:after {
 }
 @media screen and (orientation: landscape) {
   .pg-section-full#sponsor-packages {
-    padding-left: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
-  .pg-section-full#sponsor-packages .pad-right(3) .section-header {
-    width: 100%;
+  .pg-section-full#sponsor-packages .section-header {
+    width: 95%;
   }
 }
 .pg-section-full#stage-sponsor-package {
@@ -4286,6 +4309,9 @@ a.book-tickets-btn-lg:focus:after {
   padding: 0px 15px 15px 15px;
   background-color: #eda03f;
   margin-bottom: 5px;
+}
+.pg-section-full#stage-sponsor-package .stage-info:last-child {
+  margin-bottom: 0px;
 }
 .pg-section-full#stage-sponsor-package .stage-info h3 {
   margin: 0px auto 10px auto;
@@ -4364,9 +4390,10 @@ a.book-tickets-btn-lg:focus:after {
   text-decoration: none;
   font-size: 14px;
   line-height: 30px;
-  left: 0px;
-  bottom: 10px;
-  width: 100%;
+  left: 50%;
+  bottom: 15px;
+  width: 90%;
+  margin-left: -45%;
 }
 .pg-section-full#press-quotes .item .quote-wrap a.media-link i {
   line-height: 30px;
@@ -4404,6 +4431,12 @@ a.book-tickets-btn-lg:focus:after {
   .pg-section-full#press-quotes .item .quote-wrap blockquote.media-quote {
     font-size: 16px;
     line-height: 20px;
+  }
+}
+@media screen and (orientation: landscape) {
+  .pg-section-full dl.info-list {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 #map-and-directions-section {
@@ -4538,24 +4571,10 @@ a.book-tickets-btn-lg:focus:after {
   border-radius: 4px;
   margin-bottom: 10px;
 }
-.info-panel ul.list-arrows {
+.info-panel ul.media-list {
   font-size: 16px;
   line-height: 25px;
-}
-.info-panel ul.list-arrows li:before {
-  font-family: FontAwesome;
-  content: "\f138";
-  color: #eda03f;
-}
-.info-panel ul.list-arrows li {
-  padding-left: 30px;
-  position: relative;
-}
-.info-panel ul.list-arrows li:before {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  font-size: 18px;
+  text-align: center;
 }
 .info-panel .panel-imgs-2 img {
   border: 2px solid #FFF;
@@ -4567,17 +4586,15 @@ a.book-tickets-btn-lg:focus:after {
   background-color: #eda03f;
   border: 2px solid #FFF;
   color: #FFF;
-  font-size: 12px;
+  font-size: 14px;
+  padding-right: 0px;
+  text-align: left;
 }
 .info-panel a.enquiry-btn:hover,
 .info-panel a.enquiry-btn:active,
 .info-panel a.enquiry-btn:focus {
   background-color: #FFF;
   color: #eda03f;
-}
-.info-panel a.enquiry-btn i {
-  float: right;
-  line-height: 18px;
 }
 .info-panel .panel-text {
   font-size: 16px;
@@ -4657,7 +4674,7 @@ a.book-tickets-btn-lg:focus:after {
 .info-panel .contact-info.panel-email a {
   color: #FFF;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 25px;
 }
 .info-panel .contact-info.panel-email a:hover,
@@ -4686,25 +4703,16 @@ a.book-tickets-btn-lg:focus:after {
   clear: both;
 }
 @media screen and (orientation: landscape) {
-  .info-panel .panel-inner.col-list-2 {
-    -moz-column-width: 50%;
-    -moz-column-count: 2;
-    -moz-column-gap: 30px;
-    -moz-column-rule-color: #EEE;
-    -moz-column-rule-style: solid;
-    -moz-column-rule-width: 0px;
-    -webkit-column-width: 50%;
-    -webkit-column-count: 2;
-    -webkit-column-gap: 30px;
-    -webkit-column-rule-color: #EEE;
-    -webkit-column-rule-style: solid;
-    -webkit-column-rule-width: 0px;
-    column-width: 50%;
-    column-count: 2;
-    column-gap: 30px;
-    column-rule-color: #EEE;
-    column-rule-style: solid;
-    column-rule-width: 0px;
+  .info-panel .panel-inner .panel-left,
+  .info-panel .panel-inner .panel-right {
+    width: 50%;
+    float: left;
+  }
+  .info-panel .panel-inner .panel-left {
+    padding-right: 10px;
+  }
+  .info-panel .panel-inner .panel-right {
+    padding-left: 10px;
   }
 }
 .info-panel .contact-info-sml {
@@ -4730,15 +4738,19 @@ a.book-tickets-btn-lg:focus:after {
   color: #eda03f;
 }
 @media screen and (orientation: landscape) {
-  .info-panel#sponsor-enquiries-panel {
-    width: 55%;
-    float: left;
-    margin-bottom: 0px;
+  .info-panel {
+    /*
+&#sponsor-enquiries-panel {
+		width: 55%;	
+		.fleft;
+		.mag-bot-0;
+		}
+*/
   }
 }
 .social-media-stats {
   border: #eda03f 2px dashed;
-  padding: 10px;
+  padding: 15px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
@@ -4757,7 +4769,7 @@ a.book-tickets-btn-lg:focus:after {
   line-height: 18px;
 }
 .social-media-stats p {
-  font-size: 12px !important;
+  font-size: 14px !important;
   margin-bottom: 20px !important;
 }
 .social-media-stats .social-stat-wrap {
@@ -4765,9 +4777,10 @@ a.book-tickets-btn-lg:focus:after {
   -moz-border-radius: 8px;
   border-radius: 8px;
   padding: 0px 5px 5px 5px;
-}
-.social-media-stats .social-stat-wrap:first-child {
   margin-bottom: 20px;
+}
+.social-media-stats .social-stat-wrap:last-child {
+  margin-bottom: 0px;
 }
 .social-media-stats .social-stat-wrap i {
   display: inline-block;
@@ -4790,8 +4803,6 @@ a.book-tickets-btn-lg:focus:after {
   .social-media-stats .social-stat-wrap {
     width: 49%;
     float: left;
-  }
-  .social-media-stats .social-stat-wrap:first-child {
     margin-bottom: 0px;
   }
   .social-media-stats .social-stat-wrap:last-child {
@@ -4815,14 +4826,14 @@ a.book-tickets-btn-lg:focus:after {
 }
 .download-panel a.download-btn {
   background-color: #006f9c;
-  border: 5px solid #eda03f;
+  border: 3px solid #eda03f;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
   height: 50px;
   color: #FFF;
   padding: 0px;
-  line-height: 40px;
+  line-height: 44px;
   font-size: 16px;
 }
 .download-panel a.download-btn:hover,
@@ -4831,25 +4842,29 @@ a.book-tickets-btn-lg:focus:after {
   background-color: #eda03f;
 }
 @media screen and (orientation: landscape) {
-  .download-panel {
-    width: 40%;
-    float: right;
+  .download-panel img {
+    float: left;
+    margin-right: 30px;
+    margin-left: 15%;
+    max-width: 120px;
+    margin-bottom: 20px;
   }
   .download-panel span {
     text-align: left;
     margin-bottom: 20px;
+    padding-right: 50px;
   }
-  .download-panel img {
-    margin-right: 0px;
-    margin-left: 0px;
-    max-width: 120px;
-    margin-bottom: 20px;
+  .download-panel a.download-btn {
+    clear: both;
   }
 }
-#sponsors-and-stalls .sponsors-outer-wrap,
+#sponsors-and-stalls .sponsors-outer-wrap {
+  padding-top: 10px;
+  height: 130px;
+}
 #sponsors-and-stalls .carousel-inner,
 #sponsors-and-stalls .sponsors-inner-wrap {
-  height: 110px;
+  height: 120px;
 }
 #sponsors-and-stalls .sponsor-logo {
   width: 70%;
@@ -4903,10 +4918,12 @@ a.book-tickets-btn-lg:focus:after {
   line-height: 50px;
 }
 @media screen and (orientation: landscape) {
-  #sponsors-and-stalls .sponsors-outer-wrap,
+  #sponsors-and-stalls .sponsors-outer-wrap {
+    height: 170px;
+  }
   #sponsors-and-stalls .carousel-inner,
   #sponsors-and-stalls .sponsors-inner-wrap {
-    height: 150px;
+    height: 160px;
   }
   #sponsors-and-stalls .sponsor-logo {
     width: 50%;
@@ -5528,7 +5545,7 @@ a.book-tickets-btn-lg:focus:after {
   left: 0px;
 }
 #main-content .col-panel {
-  padding: 80px 0px 20px 0px;
+  padding: 80px 0px 30px 0px;
   margin: 20px 0px 0px 0px;
   position: relative;
 }
@@ -5550,10 +5567,22 @@ a.book-tickets-btn-lg:focus:after {
 }
 @media screen and (orientation: landscape) {
   #main-content .col-panel .panel-imgs.offset-imgs {
-    top: -100px;
-    left: 0px;
+    top: -20px;
+    left: 50%;
     bottom: -100px;
     width: 42%;
+  }
+}
+@media screen and (orientation: landscape) {
+  #main-content .col-panel {
+    padding-top: 120px;
+  }
+  #main-content .col-panel .panel-imgs.offset-imgs {
+    top: -50px;
+    left: 50%;
+    height: 250px;
+    width: 50%;
+    margin-left: -25%;
   }
 }
 #main-content .sidebar .info-panel {
@@ -5665,6 +5694,14 @@ a.book-tickets-btn-lg:focus:after {
     margin-top: 40px;
   }
 }
+#videos-section:before,
+#videos-section:after {
+  content: " ";
+  display: table;
+}
+#videos-section:after {
+  clear: both;
+}
 #videos-section .video-wrap h3 {
   margin-top: 0px;
   font-size: 20px;
@@ -5730,6 +5767,18 @@ a.book-tickets-btn-lg:focus:after {
 .contact-section .ticket-info .btn:active:after,
 .contact-section .ticket-info .btn:focus:after {
   color: #006f9c;
+}
+@media screen and (orientation: landscape) {
+  .contact-section {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (orientation: landscape) {
+  .info-panels {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 /* --------------------------- */
 /* FORMS */
@@ -6011,6 +6060,8 @@ figure.alignnone {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   background-color: #FFF;
+  margin-right: 65px;
+  margin-left: 65px;
 }
 #contact-form .gform_confirmation_message {
   padding: 15px;
@@ -6173,6 +6224,12 @@ figure.alignnone {
   margin: auto;
   margin-top: 10px;
 }
+@media screen and (orientation: landscape) {
+  #contact-form .gform_wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
 /* --------------------------- */
 /* FOOTER */
 /* --------------------------- */
@@ -6191,8 +6248,10 @@ footer#footer-site-info .footer-top {
   border-bottom: 5px solid #FFF;
 }
 footer#footer-site-info .footer-base {
-  line-height: 25px;
-  font-size: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 14px;
+  font-size: 12px;
 }
 footer#footer-site-info .container-fluid {
   position: relative;
@@ -6203,13 +6262,13 @@ footer#footer-site-info .ticket-details {
 footer#footer-site-info .ticket-details .btn {
   padding: 0px;
   line-height: 40px;
-  border: 2px solid #FFF;
+  border: 3px solid #FFF;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
   background-color: #eda03f;
   color: #FFF;
-  font-size: 15px;
+  font-size: 18px;
 }
 footer#footer-site-info .ticket-details .btn:hover,
 footer#footer-site-info .ticket-details .btn:active,
@@ -6239,8 +6298,8 @@ footer#footer-site-info .ticket-info {
   font-weight: bold;
   color: #FFF;
   padding-bottom: 10px;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 18px;
 }
 footer#footer-site-info .ticket-info a {
   color: #FFF;
@@ -6252,9 +6311,9 @@ footer#footer-site-info .ticket-info a:focus {
   color: #006f9c;
 }
 footer#footer-site-info .contact-info {
-  font-size: 14px;
-  line-height: 18px;
-  padding: 5px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 15px;
   background-color: #FFF;
   background-color: rgba(255, 255, 255, 0.8);
   margin-bottom: 20px;
@@ -6325,7 +6384,7 @@ footer#footer-site-info .social-links a:focus i.fa-twitter {
   color: #00aced;
 }
 footer#footer-site-info ul.footer-base-menu {
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 footer#footer-site-info ul.footer-base-menu a {
   color: #FFF;
