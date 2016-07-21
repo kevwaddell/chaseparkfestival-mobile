@@ -3832,15 +3832,15 @@ a.book-tickets-btn-lg:focus:after {
 /* TYPOGRAHY */
 /* --------------------------- */
 .strip-header {
-  height: 40px;
+  height: 32px;
   font-size: 18px;
-  line-height: 40px;
+  line-height: 32px;
 }
 .strip-header h1,
 .strip-header h2 {
   margin-bottom: 0px;
   font-size: 18px;
-  line-height: 40px;
+  line-height: 32px;
 }
 #main-content p {
   font-size: 16px;
@@ -5511,10 +5511,12 @@ a.book-tickets-btn-lg:focus:after {
   background-color: #00aced;
 }
 #main-content #artists-slider {
+  border-bottom: 5px solid #FFF;
   /* .slider-item */
 }
 #main-content #artists-slider .strip-header {
-  height: 32px;
+  height: 37px;
+  line-height: 37px;
   border-bottom: 5px solid #FFF;
 }
 #main-content #artists-slider .artists-slider-outer {
