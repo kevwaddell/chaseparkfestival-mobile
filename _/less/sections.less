@@ -1,6 +1,6 @@
 /* SOCIAL LINKS SECTIONS */	
 .social-section-links {
-.border-top(@orange; 0.5);	
+//.border-top(@orange; 0.5);	
 .border-bot(@orange; 0.5);	
 .clearfix;
 	&.with-pad {
@@ -1132,17 +1132,43 @@ z-index: 2000;
 		}
 	}
 	
-	#artist-posts {
+	.page-links {
+	.font-size(1.4);	
+	.txt-col-wht;
+		.pages {
+		.block;
+		.pad-top(0.5);
+		.pad-bot(0.5);
+		text-align: center;
+		.border-bot(@wht; 0.5);
+		.bg-col-orange;
+		}
+		
+		.current {
+		.in-block;
+		.bg-col-orange;	
+		.w(3);
+		.h(3);
+		.line-h(3);
+		text-align: center;
+		}
+	}
+	
+	#artist-posts, #blog-posts {
 	.clearfix;
 	.border-bot(@wht; 0.5);
-		article.grid-item {
+		.grid-item {
 		width: 100%;
-		.h(18);
+		.h(20);
 		.fleft;	
 		.bg-repeat();
 		background-position: center top;
 		.bg-size();
 		.border-top(@wht; 0.5);
+			
+			&.placeholder {
+			.none;	
+			}
 		
 			a {
 			.block;
@@ -1184,7 +1210,7 @@ z-index: 2000;
 		}
 		
 		@media screen and (orientation: landscape) {
-			article.grid-item {
+			.grid-item {
 			width: 100% / 3;
 			.h(18);	
 				&:nth-child(3n) {
@@ -1193,7 +1219,29 @@ z-index: 2000;
 				}
 			}
 		}
-	} /* #artist-posts */
+	} /* #artist-posts + #blog-posts */
+	
+	#blog-posts {
+		@media screen and (orientation: landscape) {
+			.grid-item {
+			width: 100% / 2;
+			.h(18);	
+				
+				&:nth-child(3n) {
+				border-left: none;
+				border-right: none;
+				}
+				
+				&:nth-child(2n) {;	
+				.border-right(@wht; 0.5);
+				}
+				
+				&.placeholder {
+				.block;	
+				}
+			}
+		}
+	}
 	
 	.no-content-message {
 	.rounded(20px);	

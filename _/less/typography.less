@@ -75,6 +75,34 @@
 	.line-h(2.8);	
 	}
 	
+	header.post-header {
+	.pad-top(2);
+	
+		.feat-img {
+		text-align: center;
+		.mag-bot-20;
+			img {
+			width: 100%;
+			.in-block;
+			.rounded(10px);	
+				@media screen and (orientation: landscape) {
+				width: 60%;
+				}
+			}
+		}
+		
+		h1 {
+		.font-size(3);	
+		.line-h(3.5);
+		}	
+		
+		.post-date {
+		.txt-col-blue-dk;
+		.font-size(1.4);	
+		.bold;
+		}
+	}
+	
 	.main-txt {
 		
 		&.with-pad {
@@ -85,6 +113,22 @@
 		h2 {
 		.font-size(2.5);	
 		.line-h(2.8);
+		}
+		
+		p.lead {
+		.font-size(2);
+		.line-h(2.5);	
+		}
+		
+		blockquote {
+		.border-col(@orange);
+		.bold;
+		.txt-col-blue-dk;
+			 p {
+			.font-size(1.6);
+			.line-h(2);
+			font-style: italic;	
+			 }
 		}
 
 		.main-text-header {
@@ -143,8 +187,8 @@
 			.bold;
 			.txt-col-blue-dk;
 				 p {
-				.font-size(2.5);
-				.line-h(3.5);
+				.font-size(1.6);
+				.line-h(2);
 				font-style: italic;	
 				 }
 			}
