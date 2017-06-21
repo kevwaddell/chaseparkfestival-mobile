@@ -6383,6 +6383,7 @@ footer#footer-site-info .ticket-details {
   padding-bottom: 20px;
 }
 footer#footer-site-info .ticket-details .btn {
+  position: relative;
   padding: 0px;
   line-height: 40px;
   border: 3px solid #FFF;
@@ -6401,6 +6402,8 @@ footer#footer-site-info .ticket-details .btn:focus {
 }
 footer#footer-site-info .ticket-details .btn:before,
 footer#footer-site-info .ticket-details .btn:after {
+  position: absolute;
+  top: 0px;
   font-family: FontAwesome;
   width: 40px;
   line-height: 40px;
@@ -6410,11 +6413,11 @@ footer#footer-site-info .ticket-details .btn:after {
 }
 footer#footer-site-info .ticket-details .btn:before {
   content: "\f145";
-  float: left;
+  left: 0px;
 }
 footer#footer-site-info .ticket-details .btn:after {
   content: "\f054";
-  float: right;
+  right: 0px;
   font-size: 15px;
 }
 footer#footer-site-info .ticket-info {

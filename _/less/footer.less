@@ -25,6 +25,7 @@ footer#footer-site-info {
 	.ticket-details {
 	.pad-bot(2);
 		.btn {	
+		.rel;
 		.pad-all(0);
 		.line-h(4);
 		.border(@wht; 0.3);
@@ -38,6 +39,8 @@ footer#footer-site-info {
 			}
 			
 			&:before, &:after {
+			.abs;
+			.top(0);
 			font-family: FontAwesome;	
 			.w(4);
 			.line-h(4);	
@@ -48,12 +51,12 @@ footer#footer-site-info {
 			
 			&:before {
 			content: "\f145";
-			.fleft;	
+			.left(0);
 			}
 			
 			&:after {
 			content: "\f054";	
-			.fright;
+			.right(0);
 			.font-size(1.5);	
 			}
 		}
