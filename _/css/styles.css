@@ -5705,8 +5705,16 @@ a.book-tickets-btn-lg:focus:after {
     margin-left: -175px;
   }
 }
+#main-content .sidebar .poster {
+  padding-bottom: 20px;
+}
+#main-content .sidebar .poster img {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+}
 #main-content .sidebar .info-panel {
-  padding: 20px;
+  padding: 30px 30px 10px 30px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
@@ -5736,6 +5744,7 @@ a.book-tickets-btn-lg:focus:after {
 }
 #main-content .sidebar .info-panel ul.artist-list img {
   max-width: 100%;
+  max-height: 80px;
   margin-bottom: 15px;
 }
 #main-content .sidebar .info-panel ul.artist-list li {
@@ -5745,12 +5754,6 @@ a.book-tickets-btn-lg:focus:after {
 }
 #main-content .sidebar .info-panel ul.artist-list li:last-child {
   margin-bottom: 10px;
-}
-#main-content .sidebar .info-panel ul.artist-list li:nth-child(2) img {
-  max-width: 75%;
-}
-#main-content .sidebar .info-panel ul.artist-list li:nth-child(3) img {
-  max-width: 50%;
 }
 #main-content .sidebar .info-panel ul.artist-list a {
   color: #FFF;
