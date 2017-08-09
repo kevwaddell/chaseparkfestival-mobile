@@ -3627,9 +3627,9 @@ a.book-tickets-btn-lg:focus:after {
   }
 }
 #hp-masthead {
-  background-image: url(img/hp-mast-image-bg.jpg);
+  background-image: url(img/hp-mast-image-bg-2017.png);
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -3707,7 +3707,7 @@ a.book-tickets-btn-lg:focus:after {
 }
 @media screen and (orientation: landscape) {
   #hp-masthead .masthead-wrap {
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 60px;
   }
   #hp-masthead .logo-wrap {
@@ -3733,9 +3733,9 @@ a.book-tickets-btn-lg:focus:after {
 }
 #gbl-masthead {
   height: 120px;
-  background-image: url(img/gbl-mast-image-bg.jpg);
+  background-image: url(img/gbl-mast-image-bg-2017.png);
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
