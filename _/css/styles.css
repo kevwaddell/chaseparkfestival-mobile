@@ -5009,7 +5009,7 @@ a.book-tickets-btn-lg:focus:after {
   width: 70%;
   margin: auto;
   height: 100px;
-  padding: 5px 15px 5px 15px;
+  border: 4px solid #FFF;
   background-color: #FFF;
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
@@ -5031,6 +5031,7 @@ a.book-tickets-btn-lg:focus:after {
   text-decoration: none;
   position: relative;
   background-color: transparent;
+  color: #FFF;
 }
 #sponsors-and-stalls .sponsor-logo a:active,
 #sponsors-and-stalls .sponsor-logo a:focus {
@@ -5048,7 +5049,7 @@ a.book-tickets-btn-lg:focus:after {
   height: 100%;
   text-align: center;
   font-size: 30px;
-  line-height: 100px;
+  line-height: 92px;
 }
 @media screen and (orientation: landscape) {
   #sponsors-and-stalls .sponsors-outer-wrap {
