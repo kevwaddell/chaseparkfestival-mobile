@@ -5017,6 +5017,12 @@ a.book-tickets-btn-lg:focus:after {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: 90%;
+  -moz-background-size: 90%;
+  -o-background-size: 90%;
+  background-size: 90%;
 }
 #sponsors-and-stalls .sponsor-logo a {
   display: block;
@@ -5024,25 +5030,13 @@ a.book-tickets-btn-lg:focus:after {
   height: 100%;
   text-decoration: none;
   position: relative;
-  background-color: #FFF;
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+  background-color: transparent;
 }
-#sponsors-and-stalls .sponsor-logo a:hover,
 #sponsors-and-stalls .sponsor-logo a:active,
 #sponsors-and-stalls .sponsor-logo a:focus {
-  -moz-opacity: 0.5;
-  -khtml-opacity: 0.5;
-  -webkit-opacity: 0.5;
-  opacity: 0.5;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
-  filter: alpha(opacity=50);
+  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.8);
 }
-#sponsors-and-stalls .sponsor-logo a:hover:after,
 #sponsors-and-stalls .sponsor-logo a:active:after,
 #sponsors-and-stalls .sponsor-logo a:focus:after {
   position: absolute;
@@ -5054,7 +5048,7 @@ a.book-tickets-btn-lg:focus:after {
   height: 100%;
   text-align: center;
   font-size: 30px;
-  line-height: 50px;
+  line-height: 100px;
 }
 @media screen and (orientation: landscape) {
   #sponsors-and-stalls .sponsors-outer-wrap {
@@ -5067,6 +5061,9 @@ a.book-tickets-btn-lg:focus:after {
   #sponsors-and-stalls .sponsor-logo {
     width: 50%;
     height: 140px;
+  }
+  #sponsors-and-stalls .sponsor-logo a :after {
+    line-height: 140px;
   }
 }
 .img-viewer {

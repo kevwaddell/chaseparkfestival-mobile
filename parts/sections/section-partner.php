@@ -47,8 +47,8 @@ $sponsors_and_stalls = get_field('gbl_sponsors_and_stalls', 'options');
 
 		<div id="sponsor-slide-<?php echo $k+1; ?>" class="item sponsors-inner-wrap<?php echo ($k == 0) ? " active":""; ?>">
 				
-			<div class="sponsor-logo">
-			<a href="<?php echo $s['sponsor_website']; ?>" target="_blank" rel="nofollow" style="background-image: url(<?php echo $s['sponsor_logo']; ?>);"><span class="sr-only"><?php echo $s['sponsor_name']; ?></span></a>
+			<div class="sponsor-logo" style="background-image: url(<?php echo $s['sponsor_logo']; ?>);">
+			<a href="<?php echo $s['sponsor_website']; ?>" target="_blank" rel="nofollow"><span class="sr-only"><?php echo $s['sponsor_name']; ?></span></a>
 			</div>		
 			
 		</div>
