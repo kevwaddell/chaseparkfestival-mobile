@@ -85,8 +85,8 @@
 .min-h(20);	
 	
 	.section-header {
-	width: 80%;
-	.mag-auto;	
+	.mag-left(1.5);
+	.mag-right(1.5);	
 	.font-size(1.6);
 	.line-h(1.4);
 	.pad-bot-10;
@@ -414,7 +414,40 @@
 		}
 	}
 	
-
+	&#main-partner-panel {
+	.mag-top(3);
+	//.border-top(@wht; 0.4);
+	.pad-bot(4);
+		
+		h2.section-header {
+		.mag-bot(2);	
+		}
+		
+		.partner-logo {
+		.pad-all(1);	
+		.rounded(8px);
+		.mag-bot(1);
+		width: 70%;
+		}	
+		
+		.partner-txt {
+			h3 {
+			text-transform: uppercase;
+			.font-size(3);
+			font-weight: 300;
+			}
+			
+			.btn {
+			.no-border;
+			.rounded(8px);
+			.pad-all(0);
+			.h(4);
+			.line-h(4);
+			.font-size(1.6);
+			.mag-top(2);	
+			}
+		}
+	}
 	
 	@media screen and (orientation: landscape) {
 		dl.info-list {
@@ -823,6 +856,16 @@ border: @orange 2px dashed;
 }
 
 #sponsors-and-stalls {
+.border-top(@wht; 0.5);
+	
+	.panel-header {
+	.mag-left(1.5);
+	.mag-right(1.5);	
+	.font-size(1.6);
+	.line-h(1.4);
+	.pad-bot-10;
+	.border-radius(0, 8px, 8px, 0);
+	}
 	
 	.sponsors-outer-wrap {
 	.pad-top-10;
