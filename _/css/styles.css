@@ -4187,7 +4187,7 @@ a.book-tickets-btn-lg:focus:after {
 .pg-section-full .section-header {
   margin-left: 15px;
   margin-right: 15px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 14px;
   padding-bottom: 10px;
   -webkit-border-top-right-radius: 0;
@@ -4517,7 +4517,7 @@ a.book-tickets-btn-lg:focus:after {
   }
 }
 .pg-section-full#main-partner-panel {
-  margin-top: 30px;
+  margin-top: 5px;
   padding-bottom: 40px;
 }
 .pg-section-full#main-partner-panel h2.section-header {
@@ -4528,8 +4528,8 @@ a.book-tickets-btn-lg:focus:after {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
-  margin-bottom: 10px;
-  width: 70%;
+  max-width: 350px;
+  margin: 0px auto 15px auto;
 }
 .pg-section-full#main-partner-panel .partner-txt h3 {
   text-transform: uppercase;
@@ -4725,15 +4725,15 @@ a.book-tickets-btn-lg:focus:after {
 .info-panel.panel-blue a.contact-btn {
   margin-top: 20px;
   background-color: #eda03f;
-  border: 5px solid #FFF;
+  border: 2px solid #FFF;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
-  height: 60px;
+  height: 40px;
   color: #FFF;
   padding: 0px;
-  line-height: 50px;
-  font-size: 16px;
+  line-height: 36px;
+  font-size: 14px;
 }
 .info-panel.panel-blue a.contact-btn:hover,
 .info-panel.panel-blue a.contact-btn:active,
@@ -4972,13 +4972,13 @@ a.book-tickets-btn-lg:focus:after {
     clear: both;
   }
 }
-#sponsors-and-stalls {
+#sponsors-and-stalls.bg-col-orange {
   border-top: 5px solid #FFF;
 }
 #sponsors-and-stalls .panel-header {
   margin-left: 15px;
   margin-right: 15px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 14px;
   padding-bottom: 10px;
   -webkit-border-top-right-radius: 0;
@@ -5793,7 +5793,7 @@ a.book-tickets-btn-lg:focus:after {
   max-width: 90%;
 }
 #main-content .sidebar .info-panel {
-  padding: 30px 30px 10px 30px;
+  padding: 10px 10px 10px 10px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
