@@ -9,7 +9,7 @@
 	<div class="container-fluid">
 		<article <?php post_class('pg-content'); ?>>
 		
-			<div class="main-txt">
+			<div class="main-txt with-pad">
 				<?php the_content(); ?>
 			</div>
 			
