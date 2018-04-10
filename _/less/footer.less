@@ -1,13 +1,18 @@
 footer#footer-site-info {
-.border-top(@wht; 0.5);
+//.border-top(@wht; 0.5);
 	
 	.footer-top {
 	//.min-h(50);
 	.rel;
 	.pad-top(2);
 	//.pad-bot(3);
-	.gradient(@blue, @wht, @blue);	
-	.border-bot(@wht; 0.5);
+	.bg-col(black);
+	.bg-img("halfone-bg-2018.png");
+	.bg-repeat;
+	.bg-size;
+	background-position: left top;
+	//.gradient(@blue, @wht, @blue);	
+	.border-bot(@wht; 0.3);
 	}
 	
 	.footer-base {
@@ -82,21 +87,22 @@ footer#footer-site-info {
 	.line-h(2);
 	.pad-all(1.5);
 	//.bg-col-wht;
-	.trans-bg(@wht; 0.8);
+	//.trans-bg(@wht; 0.8);
 	.mag-bot(2);
 	.rounded(8px);
+	.txt-col-pink;
 		a {
 		.no-text-dec;
-		.txt-col-blue;
+		.txt-col-wht;
 			&:hover, &:active, &:focus {
-			.txt-col-blue-dk;
+			.txt-col-pink;
 			text-decoration: underline;
 			}	
 		}
 	}
 	
 	.social-links {
-	.border-top(@wht; 0.5);
+	.border-top(@wht; 0.3);
 	text-align: center;
 	.rel;
 	z-index: 10;

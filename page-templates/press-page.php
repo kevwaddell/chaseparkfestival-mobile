@@ -46,7 +46,7 @@ $press_quotes = get_field('press_quotes', 'options');
 	<?php } ?>
 	
 	<?php if (!empty($press_quotes)) { ?>
-	<section id="press-quotes" class="pg-section-full blue-dk-border-top bg-col-blue">
+	<section id="press-quotes" class="pg-section-full blue-dk-border-top bg-col-orange">
 		<h2 class="section-header text-center bg-col-blue-dk txt-col-orange tk-azo-sans-uber">What the press say</h2>	
 		<div id="carousel-press-quotes" class="carousel slide" data-ride="carousel">
 			<div class="carousel-inner" role="listbox">
