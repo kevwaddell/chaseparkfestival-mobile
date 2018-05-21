@@ -2,13 +2,13 @@
 $sponsors_active = get_field('sponsors_active', 'options');		
 ?>
 
-<?php if ($main_partners_active && $sponsors_active) { ?>
+<?php if ($sponsors_active) { ?>
 <?php  
 $section_title = get_field('gbl_sponsors_section_title', 'options');	
 $sponsors_and_stalls = get_field('gbl_sponsors_and_stalls', 'options');	
 ?>
 <section id="sponsors-and-stalls" class="wide-panel bg-col-orange text-center">
-	<h3 class="panel-header text-center bg-col-wht tk-azo-sans-uber txt-col-orange">Our Sponsors for <?php echo $main_partner_year; ?></h3>
+	<h3 class="panel-header text-center bg-col-wht tk-azo-sans-uber txt-col-orange"><?php echo $section_title; ?></h3>
 	<div class="sponsors-outer-wrap carousel slide" data-ride="carousel">
 	<div class="carousel-inner" role="listbox">	
 		<?php foreach ($sponsors_and_stalls as $k => $s ) { ?>
