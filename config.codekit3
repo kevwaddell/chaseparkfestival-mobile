@@ -7,7 +7,7 @@
 		"uuidString": "EF6179F3-9E79-461F-B923-55DB20D0238D"
 		}
 	],
-"creatorBuild": "26667",
+"creatorBuild": "26680",
 "files": {
 	"\/.gitignore": {
 		"cB": 0,
@@ -1268,6 +1268,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/parts\/sections\/section-assistance.php",
+		"oF": 0
+		},
+	"\/parts\/sections\/section-mainPartner.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/parts\/sections\/section-mainPartner.php",
 		"oF": 0
 		},
 	"\/parts\/sections\/section-parking.php": {

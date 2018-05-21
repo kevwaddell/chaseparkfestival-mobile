@@ -1,3 +1,7 @@
+<?php
+$sponsorship_packages_active = 	get_field('sponsorship_packages_active', 'options');
+?>
+<?php if ($sponsorship_packages_active) { ?>
 <?php  
 $sponsorship_packages = get_field('sponsorship_packages', 'options');	
 $packages_total = count($sponsorship_packages);
@@ -52,3 +56,4 @@ huge opportunities including:</span>
 	</div>
 	
 </section>
+<?php } ?>
